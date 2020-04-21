@@ -1,0 +1,16 @@
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\bin\Debug\Panel Lidera Linii.exe.config
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\bin\Debug\Panel Lidera Linii.exe
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\bin\Debug\Panel Lidera Linii.pdb
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.csprojAssemblyReference.cache
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\current_production.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\MainWindow.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\App.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.cache
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.lref
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\current_production.baml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\MainWindow.baml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.g.resources
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel_Lidera_Linii.Properties.Resources.resources
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.csproj.GenerateResource.cache
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.exe
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.pdb

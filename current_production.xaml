@@ -1,0 +1,84 @@
+﻿<Window x:Class="Panel_Lidera_Linii.current_production"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Panel_Lidera_Linii"
+        mc:Ignorable="d"
+        Title="Aktualna Produkcja" Height="450" Width="800" Background="#A9A9A9">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   ><Run Text="C01"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,81,0,0" TextWrapping="Wrap" Text="C02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.746,-3.988"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,138,0,0" TextWrapping="Wrap" Text="C03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="6.08,4.623"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,189,0,0" TextWrapping="Wrap" Text="C04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,242,0,0" TextWrapping="Wrap" Text="T01" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.487,-2.483"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,298,0,0" TextWrapping="Wrap" Text="T02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,355,0,0" TextWrapping="Wrap" Text="T03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="18.849,-0.065"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="443,25,0,0" TextWrapping="Wrap" Text="T04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="443,81,0,0" TextWrapping="Wrap" Text="T05" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.03,1.113"   />
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="64,10,0,0">
+            <DataGrid.Columns> 
+            <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="64,65,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="64,120,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="64,175,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="64,230,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="64,285,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="64,340,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="498,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="498,65,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="443,138,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.03,1.113"   />
+        <DataGrid HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="284" Margin="498,120,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Header="Material Number" Width="215"/>
+                <DataGridTextColumn Header="Ilość sztuk"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox HorizontalAlignment="Left" Height="130" Margin="506,228,0,0" TextWrapping="Wrap" Text="Jeżeli material number się zmieni to musi rozpocząć zlicznie od 0. " VerticalAlignment="Top" Width="251"/>
+
+    </Grid>
+</Window>
