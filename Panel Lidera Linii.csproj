@@ -111,5 +111,8 @@
   <ItemGroup>
     <Resource Include="logoOK.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BorgWarner.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

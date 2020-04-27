@@ -5,25 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
-        Title="Panel Lidera Linii" Height="450" Width="800" Background="#A9A9A9">
+        Title="Panel Lidera Linii" Height="450" Width="800" Background="#A9A9A9" >
     <Grid>
-        <Calendar HorizontalAlignment="Left" Margin="603,10,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,282,0,0" TextWrapping="Wrap" Text="C01" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,313,0,0" TextWrapping="Wrap" Text="C02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,344,0,0" TextWrapping="Wrap" Text="C03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.55,0.365"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,375,0,0" TextWrapping="Wrap" Text="C04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.485,3.372"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,282,0,0" TextWrapping="Wrap" Text="T01" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="1.711,0.529"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,313,0,0" TextWrapping="Wrap" Text="T02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,344,0,0" TextWrapping="Wrap" Text="T03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,375,0,0" TextWrapping="Wrap" Text="T04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,375,0,0" TextWrapping="Wrap" Text="TSZ" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,282,0,0" TextWrapping="Wrap" Text="T04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,313,0,0" TextWrapping="Wrap" Text="T05" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,344,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.547,2.072"   />
-        <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Source="logoOK.jpg"/>
-        <Button Content="Aktualna Produkcja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,288,0,0" Height="41" Click="Button_Click"/>
-        <Button Content="Zalogowani Operatorzy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="649,350,0,0" Height="41" Click="Button_person"/>
-        <Button Content="Test połączenia SQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,230,0,0" Height="41" Click="connect_test"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="347*"/>
+        </Grid.RowDefinitions>
+        <Calendar HorizontalAlignment="Left" Margin="603,10,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,209.625,0,0" TextWrapping="Wrap" Text="C01" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,240.625,0,0" TextWrapping="Wrap" Text="C02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,271.625,0,0" TextWrapping="Wrap" Text="C03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.55,0.365" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,302.625,0,0" TextWrapping="Wrap" Text="C04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.485,3.372" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,209.625,0,0" TextWrapping="Wrap" Text="T01" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="1.711,0.529" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,240.625,0,0" TextWrapping="Wrap" Text="T02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,271.625,0,0" TextWrapping="Wrap" Text="T03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="100,302.625,0,0" TextWrapping="Wrap" Text="T04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,302.625,0,0" TextWrapping="Wrap" Text="TSZ" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,209.625,0,0" TextWrapping="Wrap" Text="T04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,240.625,0,0" TextWrapping="Wrap" Text="T05" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,271.625,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.547,2.072" Grid.Row="1" Foreground="White"   />
+        <Button Content="Aktualna Produkcja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,215.625,0,0" Height="41" Click="Button_Click" Grid.Row="1"/>
+        <Button Content="Zalogowani Operatorzy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="649,277.625,0,0" Height="41" Click="Button_person" Grid.Row="1"/>
+        <Button Content="Test połączenia SQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,157.625,0,0" Height="41" Click="connect_test" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="198" Margin="252,0,0,0" VerticalAlignment="Top" Width="268" Source="BorgWarner.png" Grid.RowSpan="2"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bg.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
     </Grid>
 </Window>

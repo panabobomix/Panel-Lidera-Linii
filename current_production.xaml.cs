@@ -13,16 +13,20 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
 using System.Data;
+using System.Timers;
+
+
+
 
 namespace Panel_Lidera_Linii
 {
-    /// <summary>
-    /// Logika interakcji dla klasy current_production.xaml
-    /// </summary>
+    
     public partial class current_production : Window
 
 
     {
+
+
         private static string connectionString =
                 "Data Source=10.217.240.26;" +
                   "Initial Catalog=turboPCSProduction;" +
@@ -60,6 +64,8 @@ namespace Panel_Lidera_Linii
 
         private void Button_Click_C01(object sender, RoutedEventArgs e)
         {
+            
+
             //ładowanie okna
             // deklaracja
             using (SqlConnection con = new SqlConnection(connectionString))
@@ -325,6 +331,14 @@ namespace Panel_Lidera_Linii
                     C04.ItemsSource = dt.DefaultView;
                 }
             }
+            
+
+        }
+
+        private void C01_CellValueChanged(
+            object sender, GridView e)
+        {
+            MessageBox.Show("test");
         }
     }
 }
