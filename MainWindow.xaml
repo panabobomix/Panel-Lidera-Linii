@@ -21,7 +21,9 @@
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,313,0,0" TextWrapping="Wrap" Text="T05" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,344,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.547,2.072"   />
         <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Source="logoOK.jpg"/>
-        <Button Content="Aktualna Produkcja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="651,344,0,0" Height="41" Click="Button_Click"/>
+        <Button Content="Aktualna Produkcja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,288,0,0" Height="41" Click="Button_Click"/>
+        <Button Content="Zalogowani Operatorzy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="649,350,0,0" Height="41" Click="Button_person"/>
+        <Button Content="Test połączenia SQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,230,0,0" Height="41" Click="connect_test"/>
 
     </Grid>
 </Window>
