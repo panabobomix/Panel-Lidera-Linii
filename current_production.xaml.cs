@@ -331,14 +331,129 @@ namespace Panel_Lidera_Linii
                     C04.ItemsSource = dt.DefaultView;
                 }
             }
-            
 
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='421050'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_c01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='421913'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_c02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='444444'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_c03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='421008'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_c04.ItemsSource = dt.DefaultView;
+                }
+            }
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='421052'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_t01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='421975'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_t02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='421022'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_t03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='422261'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_t04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='4211791'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_t05.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 CreationDate, DATEDIFF (MINUTE, CreationDate , getdate()) as 'time' from tblHeaderData where InventoryNo ='421998'order by CreationDate DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    last_t06.ItemsSource = dt.DefaultView;
+                }
+            }
         }
 
-        private void C01_CellValueChanged(
-            object sender, GridView e)
-        {
-            MessageBox.Show("test");
-        }
     }
 }

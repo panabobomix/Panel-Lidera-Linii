@@ -5,102 +5,146 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
-        Title="Aktualna Produkcja" Height="612.75" Width="900" Background="#A9A9A9">
-    <Grid>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   ><Run Text="C01"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,115,0,0" TextWrapping="Wrap" Text="C02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.746,-3.988"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,180,0,0" TextWrapping="Wrap" Text="C03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="6.08,4.623"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,243,0,0" TextWrapping="Wrap" Text="C04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.931,1.962"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,309,0,0" TextWrapping="Wrap" Text="T01" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.487,-2.483"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,380,0,0" TextWrapping="Wrap" Text="T02" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="10,448,0,0" TextWrapping="Wrap" Text="T03" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="18.849,-0.065"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="433,35,0,0" TextWrapping="Wrap" Text="T04" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold"   />
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="433,99,0,0" TextWrapping="Wrap" Text="T05" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.03,1.113"   />
-        <DataGrid x:Name="C03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="44,153,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <TextBlock HorizontalAlignment="Left" Height="26" Margin="433,180,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.03,1.113"   />
-        <TextBox HorizontalAlignment="Left" Height="130" Margin="506,228,0,0" TextWrapping="Wrap" Text="Jeżeli material number się zmieni to musi rozpocząć zlicznie od 0. " VerticalAlignment="Top" Width="251"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="367,159,0,0" Click="Button_Click" Height="47"/>
-        <DataGrid x:Name="C01" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="44,17,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="C02" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="44,84,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="C04" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="44,220,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="T01" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="44,287,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="T02" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="44,354,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="T03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="44,421,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="T04" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="477,17,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="T05" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="477,86,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="T06" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="477,153,0,0" AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
-                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
-                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="367,94,0,0" Click="Button_Click_c02" Height="47"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="367,22,0,0" Click="Button_Click_C01" Height="47"  />
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="367,228,0,0" Click="Button_Click_c04" Height="47"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="367,302,0,0" Click="Button_Click_T01" Height="47"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="367,359,0,0" Click="Button_Click_T02" Height="47"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="367,427,0,0" Click="Button_Click_T03" Height="47"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="814,22,0,0" Click="Button_Click_T04" Height="47"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="814,94,0,0" Click="Button_Click_T05" Height="47"/>
-        <Button Content="Pobierz" HorizontalAlignment="Left" VerticalAlignment="Top" Width="51" Margin="814,159,0,0" Click="Button_Click_T06" Height="47"/>
-        <Button Content="Pobierz Dane" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Margin="650,449,0,0" Click="download_all" Height="69"/>
+        Title="Aktualna Produkcja" Height="800" Width="1200" Background="#A9A9A9">
+    <Grid Margin="0,0,2,0">
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bg.jpg" Stretch="UniformToFill"/>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0.051"/>
+                <GradientStop Color="#FFAE591E" Offset="0.91"/>
+                <GradientStop Color="#FFC3AA66" Offset="0.727"/>
+            </LinearGradientBrush>
         </Grid.Background>
+        <TextBlock HorizontalAlignment="Left" Height="51" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="36" FontWeight="Bold" Foreground="#FF6E38FF"   ><Run Text="C01"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="64" Margin="10,120,0,0" TextWrapping="Wrap" Text="C02" VerticalAlignment="Top" Width="81" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.746,-3.988" Foreground="#FF6E38FF"   />
+        <TextBlock HorizontalAlignment="Left" Height="69" Margin="10,235,0,0" TextWrapping="Wrap" Text="C03" VerticalAlignment="Top" Width="97" FontSize="36" FontWeight="Bold" RenderTransformOrigin="6.08,4.623" Foreground="#FF6E38FF"   />
+        <TextBlock HorizontalAlignment="Left" Height="56" Margin="10,363,0,0" TextWrapping="Wrap" Text="C04" VerticalAlignment="Top" Width="107" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.931,1.962" Foreground="#FF6E38FF"   />
+        <TextBlock HorizontalAlignment="Left" Height="58" Margin="10,492,0,0" TextWrapping="Wrap" Text="T01" VerticalAlignment="Top" Width="81" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.487,-2.483" Foreground="#FF6E38FF"   />
+        <TextBlock HorizontalAlignment="Left" Height="65" Margin="10,619,0,0" TextWrapping="Wrap" Text="T02" VerticalAlignment="Top" Width="81" FontSize="36" FontWeight="Bold" Foreground="#FF6E38FF" RenderTransformOrigin="15.121,8.668"   />
+        <TextBlock HorizontalAlignment="Left" Height="69" Margin="597,0,0,0" TextWrapping="Wrap" Text="T03" VerticalAlignment="Top" Width="77" FontSize="36" FontWeight="Bold" RenderTransformOrigin="18.849,-0.065" Foreground="#FF6E38FF"   />
+        <TextBlock HorizontalAlignment="Left" Height="78" Margin="597,120,0,0" TextWrapping="Wrap" Text="T04" VerticalAlignment="Top" Width="88" FontSize="36" FontWeight="Bold" Foreground="#FF6E38FF" RenderTransformOrigin="17.505,0.807"   />
+        <TextBlock HorizontalAlignment="Left" Height="95" Margin="597,235,0,0" TextWrapping="Wrap" Text="T05" VerticalAlignment="Top" Width="111" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.03,1.113" Foreground="#FF6E38FF"   />
+        <DataGrid x:Name="C03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="10,291,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="853,168,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.03,1.113"   />
+        <DataGrid x:Name="C01" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="10,53,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100" />
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="C02" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="10,168,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="C04" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="10,419,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T01" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="10,550,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T02" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="10,673,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="597,53,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T04" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="597,166,0,0" AutoGenerateColumns="False" Background="Gray" Foreground="Black">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T05" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="597,291,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T06" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="62" VerticalAlignment="Top" Width="320" Margin="597,419,0,0" AutoGenerateColumns="False" Background="Gray">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
+                <DataGridTextColumn Header="Ilość sztuk" Width="65"/>
+                <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Pobierz Dane" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Margin="853,597,0,0" Click="download_all" Height="69" Background="#FF32B82C" FontSize="24" FontWeight="Bold"/>
+        <DataGrid x:Name="last_c01" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="365,53,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_c02" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="365,166,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_c03" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="365,291,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_c04" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="365,419,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_t01" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="365,550,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_t02" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="365,673,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Height="95" Margin="597,363,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="111" FontSize="36" FontWeight="Bold" RenderTransformOrigin="0.03,1.113" Foreground="#FF6E38FF"   />
+        <DataGrid x:Name="last_t03" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="958,53,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_t04" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="958,166,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_t05" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="958,291,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="last_t06" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="62" VerticalAlignment="Top" Width="191" Margin="958,419,0,0" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Czas od ostatniej sztuki [min]" Binding="{Binding time}" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
