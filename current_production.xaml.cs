@@ -44,6 +44,7 @@ namespace Panel_Lidera_Linii
             timer.Interval = TimeSpan.FromSeconds(30);
             timer.Tick += timer_Tick;
             timer.Start();
+            
         }
 
 
@@ -52,7 +53,7 @@ namespace Panel_Lidera_Linii
 
         void timer_Tick(object sender, EventArgs e)
         {
-
+           
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
@@ -287,6 +288,126 @@ namespace Panel_Lidera_Linii
                     last_t06.ItemsSource = dt.DefaultView;
                 }
             }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='444444'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421050'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421913'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421008'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421052'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421975'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421022'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='422261'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='4211791'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t05.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421998'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t06.ItemsSource = dt.DefaultView;
+                }
+            }
 
         }
 
@@ -472,7 +593,7 @@ namespace Panel_Lidera_Linii
 
 
 
-
+       
 
 
 
@@ -720,9 +841,131 @@ namespace Panel_Lidera_Linii
                 }
             }
 
-            
+
+
+            /// ilość sztuk w ostatniej godzinie///
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='444444'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421050'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421913'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421008'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_c04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421052'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421975'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421022'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='422261'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='4211791'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t05.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421998'";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    hours_t06.ItemsSource = dt.DefaultView;
+                }
+            }
         }
 
-       
+        
     }
 }
