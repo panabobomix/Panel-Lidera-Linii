@@ -166,7 +166,7 @@ namespace Panel_Lidera_Linii
                     C04.ItemsSource = dt.DefaultView;
                 }
             }
-
+            //od ostatniej sztuki ile upłynęło//
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
@@ -288,10 +288,13 @@ namespace Panel_Lidera_Linii
                     last_t06.ItemsSource = dt.DefaultView;
                 }
             }
+
+
+            /// ilość sztuk w ostatniej godzinie///
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='444444'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500444444%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -303,7 +306,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421050'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500421050%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -315,7 +318,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421913'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500421913%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -327,7 +330,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421008'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500421008%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -339,7 +342,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421052'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500421052%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -363,7 +366,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421022'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500421022%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -375,7 +378,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='422261'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500422261%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -387,7 +390,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='4211791'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '75004211791%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -399,13 +402,141 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421998'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500421998%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
                     DataTable dt = new DataTable();
                     a.Fill(dt);
                     hours_t06.ItemsSource = dt.DefaultView;
+                }
+            }
+
+
+
+
+
+
+            // Ilość sztuk wyprodukowanych//
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421050'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421913'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '444444'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421008'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421052'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421975'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421022'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '422261'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '4211791'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t05.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421998'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t06.ItemsSource = dt.DefaultView;
                 }
             }
 
@@ -847,7 +978,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='444444'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500444444%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -859,7 +990,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421050'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500421050%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -871,7 +1002,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421913'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500421913%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -883,7 +1014,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421008'";
+                string sqlQuery = "select COUNT (PSN) as 'hours' from tblAtlasCopco where PSN like '7500421008%' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -895,7 +1026,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421052'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500421052%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -919,7 +1050,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421022'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500421022%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -931,7 +1062,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='422261'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500422261%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -943,7 +1074,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='4211791'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '75004211791%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -955,7 +1086,7 @@ namespace Panel_Lidera_Linii
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "SELECT count(*) as hours FROM tblHeaderData WHERE CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) and InventoryNo ='421998'";
+                string sqlQuery = "select count (distinct dmc) as 'hours' from tblDMC where PSN like '7500421998%' and CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -964,6 +1095,134 @@ namespace Panel_Lidera_Linii
                     hours_t06.ItemsSource = dt.DefaultView;
                 }
             }
+
+
+            // Ilość sztuk wyprodukowanych//
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421050'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421913'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '444444'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421008'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_c04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421052'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t01.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421975'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t02.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421022'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t03.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '422261'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t04.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '4211791'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t05.ItemsSource = dt.DefaultView;
+                }
+            }
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select top 1 ProductionOrder, count (*) as 'pcs'from tblHeaderData where InventoryNo = '421998'group by ProductionOrder order by MAX (CreationDate) DESC";
+
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    quantity_t06.ItemsSource = dt.DefaultView;
+                }
+            }
+
+
+
+
         }
 
         
