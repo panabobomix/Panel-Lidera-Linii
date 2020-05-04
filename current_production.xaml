@@ -55,8 +55,8 @@
         <DataGrid x:Name="C01" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="236" Margin="10,114,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100" />
-
                 <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
+
             </DataGrid.Columns>
         </DataGrid>
         <DataGrid x:Name="C02" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="236" Margin="10,230,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
@@ -87,7 +87,7 @@
                 <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="T03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="237" Margin="592,114,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
+        <DataGrid x:Name="T03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="237" Margin="609,114,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100"/>
 
@@ -116,108 +116,8 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Pobierz Dane" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Margin="969,643,0,0" Click="download_all" Height="69" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
-        <DataGrid x:Name="last_c01" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="262,114,0,0" AutoGenerateColumns="False" Background="Gray"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_c02" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="262,229,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_c03" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="262,348,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_c04" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="262,480,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"   />
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_t01" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="262,612,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_t02" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="262,734,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_t03" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="846,114,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_t04" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="846,230,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_t05" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="846,355,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="last_t06" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="47" Margin="846,483,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="[min]" Binding="{Binding time}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_c01" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="364,114,0,0" AutoGenerateColumns="False"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
         <TextBlock HorizontalAlignment="Left" Height="80" Margin="349,8,0,0" TextWrapping="Wrap" Text="Ostatnia Godzina" VerticalAlignment="Top" Width="97" Foreground="#FFF6FDFB" FontSize="22" FontWeight="Bold"/>
-        <DataGrid x:Name="hours_c02" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="364,229,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_c03" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="364,348,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_c04" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="364,480,0,0" AutoGenerateColumns="False"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_t01" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="364,612,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_t02" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="364,734,0,0" AutoGenerateColumns="False"  HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_t03" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="950,114,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_t04" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="37" Margin="951,229,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_t05" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="38" Margin="950,355,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="hours_t06" HorizontalAlignment="Left" ItemsSource="{Binding}" Height="45" VerticalAlignment="Top" Width="37" Margin="951,483,0,0" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="H" Binding="{Binding hours}" Width="200"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="quantity_c01" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="507,114,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
+        <DataGrid x:Name="quantity_c01" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="507,114,0,0" VerticalAlignment="Top" Width="228" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Pcs" Binding="{Binding pcs}" Width="200"/>
             </DataGrid.Columns>
@@ -252,22 +152,22 @@
         <TextBlock HorizontalAlignment="Left" Height="87" Margin="795,8,0,0" TextWrapping="Wrap" Text="Od ostatniej sztuki [min]" VerticalAlignment="Top" Width="152" Foreground="#FFF6FDFB" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="80" Margin="935,8,0,0" TextWrapping="Wrap" Text="Ostatnia Godzina" VerticalAlignment="Top" Width="97" Foreground="#FFF6FDFB" FontSize="22" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="67" Margin="1032,10,-30,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188" Foreground="#FFF6FDFB" FontSize="22" FontWeight="Bold"><Run Text="Wyprodukowano"/></TextBlock>
-        <DataGrid x:Name="quantity_t03" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1078,114,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
+        <DataGrid x:Name="quantity_t03" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1118,101,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Pcs" Binding="{Binding pcs}" Width="200"/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="quantity_t04" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1078,229,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
+        <DataGrid x:Name="quantity_t04" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1118,239,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Pcs" Binding="{Binding pcs}" Width="200"/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="quantity_t05" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1078,352,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
+        <DataGrid x:Name="quantity_t05" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1118,336,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Pcs" Binding="{Binding pcs}" Width="200"/>
             </DataGrid.Columns>
         </DataGrid>
-        <DataGrid x:Name="quantity_t06" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1078,484,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
+        <DataGrid x:Name="quantity_t06" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1091,482,0,0" VerticalAlignment="Top" Width="39" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Pcs" Binding="{Binding pcs}" Width="200"/>
             </DataGrid.Columns>
@@ -291,8 +191,79 @@
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="592,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="TechnicBold"   ><Run Text="T04"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="592,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="TechnicBold"   ><Run Text="T05"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="592,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="TechnicBold"   ><Run Text="T06"/></TextBlock>
+        <DataGrid x:Name="C01_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="272,114,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="C02_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="272,229,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="C03_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="272,355,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="C04_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="272,480,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T01_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="272,612,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T02_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="272,734,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T03_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="857,114,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T04_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="857,229,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T05_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="857,355,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="T06_last" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="221" Margin="857,484,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Od ostatniej sztuki" Binding="{Binding time}" Width="120"/>
+
+                <DataGridTextColumn Header="Godzinowo" Binding="{Binding hours}" Width="135"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Dane Produkcyjne" HorizontalAlignment="Left" VerticalAlignment="Top" Width="209" Margin="921,734,0,0" Click="download_production" Height="69" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
         <!--<test> -->
-       
+
 
 
 
