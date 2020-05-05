@@ -38,195 +38,204 @@ namespace Panel_Lidera_Linii
         DataTable dt;
         SqlDataReader reader, reader2;
 
-        private void download_production(object sender, RoutedEventArgs e)
-        {
+       
 
-            //ILOŚĆ SZTUK WYPRODUKOWANYCH PO PRODUCTION ORDER
+        /*
+private void download_production(object sender, RoutedEventArgs e)
+{
+
+   //ILOŚĆ SZTUK WYPRODUKOWANYCH PO PRODUCTION ORDER
 
 
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421050' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '421050' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_c01.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_c01.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421913' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '421913' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_c02.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_c02.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '444444' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '444444' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_c03.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_c03.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421008' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '421008' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_c04.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_c04.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421052' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '421052' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_t01.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_t01.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421975' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '421975' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_t02.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_t02.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421022' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '421022' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_t03.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_t03.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '422261' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '422261' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_t04.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_t04.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '4211791' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '4211791' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_t05.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_t05.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
-                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421998' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+   }
+   using (SqlConnection con = new SqlConnection(connectionString))
+   {
+       con.Open();//otwarcie połączenie
+       string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+           "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+           "where tblHeaderData.InventoryNo = '421998' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+       using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    quantity_t06.ItemsSource = dt.DefaultView;
+       {
+           DataTable dt = new DataTable();
+           a.Fill(dt);
+           quantity_t06.ItemsSource = dt.DefaultView;
 
-                }
+       }
 
-            }
-        }
-
+   }
+}
+*/ // przycisk dane produkcyjne tymczasowo wyłączony
         public current_production()
         {
             InitializeComponent();
             
             DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(45);
+            timer.Interval = TimeSpan.FromSeconds(30);
             timer.Tick += timer_Tick;
             timer.Start();
-            
+
+            DispatcherTimer timer2 = new DispatcherTimer();
+            timer2.Interval = TimeSpan.FromMinutes(15);
+            timer2.Tick += new System.EventHandler(timer2_Tick);
+            timer2.Start();
 
         }
+
+       
 
 
         //TESTY!!!
@@ -524,7 +533,8 @@ namespace Panel_Lidera_Linii
                 }
             }
 
-            //ZLICZANIE ILOSCI SZTUK Z DANEGO ZLECENIA PRODUKCYJNEGO !!!
+            //ILOŚĆ SZTUK WYPRODUKOWANYCH PO PRODUCTION ORDER
+
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -599,7 +609,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421052' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '421052' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -633,7 +643,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421022' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '421022' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -650,7 +660,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '422261' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '422261' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -667,7 +677,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '4211791' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '4211791' and tblDMC.CodeType = 'NamePlate' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -684,7 +694,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421998' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '421998' and tblDMC.Description = 'NamePlate' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -701,13 +711,27 @@ namespace Panel_Lidera_Linii
 
 
 
-
         }
 
 
 
+        void timer2_Tick(object sender, EventArgs e) // timer do zapytania o  użycie kodu liderskiego
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select count (DMC) as 'kod'" +
+                    "from tblDMCwhere DMC = '1234567851247921547921475320' and PSN like '7500444444%'and CreationDate > DATEADD(hh,-3,GETDATE())" +
+                    "group by tblDMC.DMC";
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    T01.ItemsSource = dt.DefaultView;
+                }
+            }
 
-
+        }
 
 
 
@@ -930,86 +954,6 @@ namespace Panel_Lidera_Linii
 
 
 
-
-            //Ile od ostatniej sztuki + ilość godzinowa
-
-
-
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblDmc.PSN,count(tblDMC.PSN) over() as 'hours',DATEDIFF(MINUTE, tblDMC.CreationDate, getdate()) as 'time'from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)where tblDMC.PSN like '7500421052%' and tblDMC.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)Order by tblHeaderData.CreationDate DESC";
-
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    T01_last.ItemsSource = dt.DefaultView;
-                }
-            }
-
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblDmc.PSN,count(tblDMC.PSN) over() as 'hours',DATEDIFF(MINUTE, tblDMC.CreationDate, getdate()) as 'time'from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)where tblDMC.PSN like '7500421975%' and tblDMC.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)Order by tblHeaderData.CreationDate DESC";
-
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    T02_last.ItemsSource = dt.DefaultView;
-                }
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblDmc.PSN,count(tblDMC.PSN) over() as 'hours',DATEDIFF(MINUTE, tblDMC.CreationDate, getdate()) as 'time'from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)where tblDMC.PSN like '7500421022%' and tblDMC.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)Order by tblHeaderData.CreationDate DESC";
-
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    T03_last.ItemsSource = dt.DefaultView;
-                }
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblDmc.PSN,count(tblDMC.PSN) over() as 'hours',DATEDIFF(MINUTE, tblDMC.CreationDate, getdate()) as 'time'from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)where tblDMC.PSN like '7500422261%' and tblDMC.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)Order by tblHeaderData.CreationDate DESC";
-
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    T04_last.ItemsSource = dt.DefaultView;
-                }
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblDmc.PSN,count(tblDMC.PSN) over() as 'hours',DATEDIFF(MINUTE, tblDMC.CreationDate, getdate()) as 'time'from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)where tblDMC.PSN like '75004211791%' and tblDMC.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)Order by tblHeaderData.CreationDate DESC";
-
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    T05_last.ItemsSource = dt.DefaultView;
-                }
-            }
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
-                con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblDmc.PSN,count(tblDMC.PSN) over() as 'hours',DATEDIFF(MINUTE, tblDMC.CreationDate, getdate()) as 'time'from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)where tblDMC.PSN like '7500421998%' and tblDMC.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)Order by tblHeaderData.CreationDate DESC";
-
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    T06_last.ItemsSource = dt.DefaultView;
-                }
-            }
-
-
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
@@ -1083,7 +1027,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421052' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '421052' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -1117,7 +1061,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421022' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '421022' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -1134,7 +1078,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '422261' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '422261' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -1151,7 +1095,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '4211791' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '4211791' and tblDMC.CodeType = 'NamePlate' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -1168,7 +1112,7 @@ namespace Panel_Lidera_Linii
                 con.Open();//otwarcie połączenie
                 string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                     "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                    "where tblHeaderData.InventoryNo = '421998' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
+                    "where tblHeaderData.InventoryNo = '421998' and tblDMC.Description = 'NamePlate' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
 
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
 
@@ -1179,6 +1123,23 @@ namespace Panel_Lidera_Linii
 
                 }
 
+            }
+
+
+            //pobranie informacji o użyciu kodu liderskiego w ostatnich 3 godzinach pracy 
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();//otwarcie połączenie
+                string sqlQuery = "select count (DMC) as 'kod'" +
+                    "from tblDMC where DMC = '1234567851247921547921475320' and PSN like '7500444444%'and CreationDate > DATEADD(hh,-3,GETDATE())" +
+                    "group by tblDMC.DMC";
+                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    a.Fill(dt);
+                    T01.ItemsSource = dt.DefaultView;
+                }
             }
 
 
