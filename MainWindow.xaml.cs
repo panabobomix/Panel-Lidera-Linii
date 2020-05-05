@@ -33,6 +33,9 @@ namespace Panel_Lidera_Linii
         {
             current_production dashboard = new current_production();
             dashboard.Show();
+            loading dashboard2 = new loading();
+            dashboard2.Show();
+
         }
 
         private void Button_person(object sender, RoutedEventArgs e)

@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="loading.xaml.cs">
+      <DependentUpon>loading.xaml</DependentUpon>
+    </Compile>
     <Compile Include="login_screen.xaml.cs">
       <DependentUpon>login_screen.xaml</DependentUpon>
     </Compile>
@@ -62,6 +65,10 @@
       <DependentUpon>zalogowani_operatorzy.xaml</DependentUpon>
     </Compile>
     <Page Include="current_production.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="loading.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

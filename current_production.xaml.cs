@@ -233,9 +233,19 @@ private void download_production(object sender, RoutedEventArgs e)
             timer2.Tick += new System.EventHandler(timer2_Tick);
             timer2.Start();
 
+            DispatcherTimer timer3 = new DispatcherTimer();
+            timer3.Interval = TimeSpan.FromMinutes(15);
+            timer3.Tick += new System.EventHandler(timer3_Tick);
+            timer3.Start();
+
         }
 
-       
+
+
+        void timer3_Tick(object sender, EventArgs e)
+        {
+
+        }
 
 
         //TESTY!!!
@@ -243,6 +253,9 @@ private void download_production(object sender, RoutedEventArgs e)
 
         void timer_Tick(object sender, EventArgs e)
         {
+            
+
+
 
             //POBIERANIE STANDARDOWYCH INFORMACJI T01/T02/T03/T04 
 

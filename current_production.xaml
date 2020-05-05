@@ -252,6 +252,7 @@
                 <DataGridTextColumn Header="Kod liderski użyty w ciągu ostatnich 3 godzin " Binding="{Binding pcs}" Width="350"/>
             </DataGrid.Columns>
         </DataGrid>
+        <ProgressBar x:Name="progress_bar" HorizontalAlignment="Left" Height="21" Margin="205,668,0,0" VerticalAlignment="Top" Width="261" />
         <!--<test> -->
 
 
