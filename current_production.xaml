@@ -41,7 +41,7 @@
 
 
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\tlo.jpg" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\tlo_test.png" Stretch="UniformToFill"/>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="641,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="TechnicBold"   ><Run Text="C01"/></TextBlock>
         <DataGrid x:Name="C03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="236" Margin="638,228,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
@@ -249,7 +249,7 @@
         </DataGrid>
         <DataGrid x:Name="kod_liderski" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="10,584,0,0" VerticalAlignment="Top" Width="258" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False" >
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Kod liderski użyty w ciągu ostatnich 3 godzin " Binding="{Binding pcs}" Width="350"/>
+                <DataGridTextColumn Header="Kod liderski użyty w ciągu ostatnich 3 godzin " Binding="{Binding kod}" Width="350"/>
             </DataGrid.Columns>
         </DataGrid>
         <DataGrid x:Name="B02" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="236" Margin="638,486,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">

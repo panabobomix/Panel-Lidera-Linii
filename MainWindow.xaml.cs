@@ -63,7 +63,13 @@ namespace Panel_Lidera_Linii
                 }
             }
         }
+
         
 
+        private void download_raport(object sender, RoutedEventArgs e)
+        {
+            raport dashboard3 = new raport();
+            dashboard3.Show();
+        }
     }
 }

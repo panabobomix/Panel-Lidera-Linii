@@ -285,8 +285,10 @@ private void download_production(object sender, RoutedEventArgs e)
             //C01 ile sztuk wyprodukowanych
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblAtlasCopco.PSN, count(tblAtlasCopco.PSN) over() as 'hours',DATEDIFF(MINUTE, tblAtlasCopco.CreationDate, getdate()) as 'time' from(tblHeaderData inner join tblAtlasCopco on tblHeaderData.PSN = tblAtlasCopco.PSN) where tblHeaderData.InventoryNo = '421050' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and tblAtlasCopco.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) Order by tblHeaderData.CreationDate DESC";
-
+                //string sqlQuery = "select TOP 1 tblHeaderData.CreationDate, MaterialNo, InventoryNo,tblAtlasCopco.PSN, count(tblAtlasCopco.PSN) over() as 'hours',DATEDIFF(MINUTE, tblAtlasCopco.CreationDate, getdate()) as 'time' from(tblHeaderData inner join tblAtlasCopco on tblHeaderData.PSN = tblAtlasCopco.PSN) where tblHeaderData.InventoryNo = '421050' and TighteningType = 'Nakretka walka'and Torque_Status = 'OK' and tblAtlasCopco.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0) Order by tblHeaderData.CreationDate DESC";
+                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+                    "where tblHeaderData.InventoryNo = '421050' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC"; 
                 con.Open();//otwarcie połączenie
                 //string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                 //    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
@@ -785,14 +787,15 @@ private void download_production(object sender, RoutedEventArgs e)
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1*  from tblHeaderData Where InventoryNo = '421998' Order by CreationDate DESC";
+                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+                    "where tblHeaderData.InventoryNo = '421998' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
                     DataTable dt = new DataTable();
                     a.Fill(dt);
                     T06.ItemsSource = dt.DefaultView;
                 }
-                con.Close();
             }
 
 
@@ -1353,7 +1356,9 @@ private void download_production(object sender, RoutedEventArgs e)
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 con.Open();//otwarcie połączenie
-                string sqlQuery = "select TOP 1*  from tblHeaderData Where InventoryNo = '421998' Order by CreationDate DESC";
+                string sqlQuery = "select TOP 1 tblHeaderData.ProductionOrder, Count (DISTINCT tblDMC.DMC) as'pcs'" +
+                    "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
+                    "where tblHeaderData.InventoryNo = '421998' and tblDMC.CodeAnalysisText = 'BidiProcess' group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
                     DataTable dt = new DataTable();

@@ -30,7 +30,9 @@
         <Image HorizontalAlignment="Left" Height="198" Margin="252,0,0,0" VerticalAlignment="Top" Width="268" Source="BorgWarner.png" Grid.RowSpan="2"/>
         <Image HorizontalAlignment="Left" Height="49" Margin="589,208,0,0" VerticalAlignment="Top" Width="68" Source="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\factory1.png" Grid.Row="1"/>
         <Image HorizontalAlignment="Left" Height="49" Margin="589,154,0,0" VerticalAlignment="Top" Width="68" Source="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\connect.png" Grid.Row="4"/>
-        <Image HorizontalAlignment="Left" Height="57" Margin="589,272,0,0" VerticalAlignment="Top" Width="55" Source="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\person.png" Grid.Row="5"/>
+        <Image HorizontalAlignment="Left" Height="57" Margin="388,146,0,0" VerticalAlignment="Top" Width="55" Source="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\diagram.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="57" Margin="589,272,0,0" VerticalAlignment="Top" Width="55" Source="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\person.png" Grid.Row="1"/>
+        <Button Content="Raport Produkcyjny" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="448,158,0,0" Height="41" Click="download_raport" Grid.Row="1"/>
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bg.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
