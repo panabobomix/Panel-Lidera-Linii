@@ -32,7 +32,7 @@ namespace Panel_Lidera_Linii
         private static string connectionString =
               "Data Source=10.217.240.26;" +
                 "Initial Catalog=turboPCSProduction;" +
-                "Integrated Security=SSPI;Connection Timeout=90";
+                "Integrated Security=SSPI;Connection Timeout=0";
         SqlCommand cmd, cmd2;
         SqlDataAdapter adpt, adpt2;
         DataTable dt;
@@ -224,17 +224,17 @@ private void download_production(object sender, RoutedEventArgs e)
             InitializeComponent();
             // czasówka dla C1/C2/C3/C4
             DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(30);
+            timer.Interval = TimeSpan.FromSeconds(60);
             timer.Tick += timer_Tick;
             timer.Start();
             // czasówka dla kodu liderskiego
             DispatcherTimer timer2 = new DispatcherTimer();
-            timer2.Interval = TimeSpan.FromSeconds(80);
+            timer2.Interval = TimeSpan.FromSeconds(180);
             timer2.Tick += new System.EventHandler(timer2_Tick);
             timer2.Start();
             // czasówka dla T01/T02/T03/T04
             DispatcherTimer timer3 = new DispatcherTimer();
-            timer3.Interval = TimeSpan.FromSeconds(30);
+            timer3.Interval = TimeSpan.FromSeconds(60);
             timer3.Tick += new System.EventHandler(timer3_Tick);
             timer3.Start();
 
@@ -794,7 +794,7 @@ private void download_production(object sender, RoutedEventArgs e)
                 {
                     DataTable dt = new DataTable();
                     a.Fill(dt);
-                    T06.ItemsSource = dt.DefaultView;
+                    quantity_t06.ItemsSource = dt.DefaultView;
                 }
             }
 
@@ -1363,7 +1363,7 @@ private void download_production(object sender, RoutedEventArgs e)
                 {
                     DataTable dt = new DataTable();
                     a.Fill(dt);
-                    T06.ItemsSource = dt.DefaultView;
+                    quantity_t06.ItemsSource = dt.DefaultView;
                 }
             }
 

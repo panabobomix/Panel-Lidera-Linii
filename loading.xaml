@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
-        Title="loading" Height="256.875" Width="536.562" Background="#A9A9A9">
+        Title="Loading" Height="256.875" Width="536.562" Background="#A9A9A9"
+        Topmost="True">
+    
     <Grid>
         <TextBlock HorizontalAlignment="Left" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="484" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" FontFamily="TechnicBold" Margin="70,10,0,0"   ><Run Text="Nawiązywanie połączenia" FontFamily="Times New Roman"/></TextBlock>
         <ProgressBar x:Name="progress" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="327" Margin="107,114,0,0"/>

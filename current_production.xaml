@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
         Title="Aktualna Produkcja" Height="800" Width="1300" Background="#A9A9A9"
+        Topmost="True"
         >
     <Window.Resources>
         <Style TargetType="Button">

@@ -25,7 +25,7 @@ namespace Panel_Lidera_Linii
         {
             InitializeComponent();
             DispatcherTimer timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromMilliseconds(2300);
+            timer.Interval = TimeSpan.FromMilliseconds(500);
             timer.Tick += timer_Tick;
             timer.Start();
 
@@ -38,12 +38,12 @@ namespace Panel_Lidera_Linii
 
             if ( progress.Value < progress.Maximum)
             {
-                progress.Value = progress.Value + 2 ;
+                progress.Value = progress.Value + 1 ;
 
             }
             if (progress.Value  == 98)
             {
-                MessageBox.Show("Ładowanie zakończone");
+                MessageBox.Show(this,"Ładowanie zakończone");
                 
 
             }
