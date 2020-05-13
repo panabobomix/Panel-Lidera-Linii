@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Aktualna Produkcja" Height="800" Width="1300" Background="#A9A9A9"
         Topmost="True"
+        
         >
     <Window.Resources>
         <Style TargetType="Button">
@@ -57,7 +58,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="100" />
                 <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
-
+                
             </DataGrid.Columns>
         </DataGrid>
         <DataGrid x:Name="C02" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="236" Margin="638,142,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
@@ -276,6 +277,7 @@
         <!--<test> -->
 
         <Image HorizontalAlignment="Left" Height="60" Margin="1193,652,0,0" VerticalAlignment="Top" Width="54" Source="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\data.png"/>
+        <Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="278" Margin="538,652,0,0" Click="download_all_test" Height="69" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
 
 
     </Grid>
