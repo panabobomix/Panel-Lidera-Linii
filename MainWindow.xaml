@@ -34,6 +34,7 @@
         <Image HorizontalAlignment="Left" Height="57" Margin="589,272,0,0" VerticalAlignment="Top" Width="55" Source="img/person.png" Grid.Row="1"/>
         <Button Content="Raport Produkcyjny" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="448,158,0,0" Height="41" Click="download_raport" Grid.Row="1"/>
         <Grid.Background>
+            
             <ImageBrush ImageSource="bg.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
     </Grid>

@@ -86,3 +86,8 @@ C:\Users\tomasz.bednarz\Panel-Lidera-Linii\bin\Debug\diagram.png
 C:\Users\tomasz.bednarz\Panel-Lidera-Linii\bin\Debug\tlo.jpg
 C:\Users\tomasz.bednarz\Panel-Lidera-Linii\bin\Debug\tlo_test.png
 C:\Users\tomasz.bednarz\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii_Content.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii_Content.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\bg.jpg
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\diagram.png
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\tlo.jpg
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\tlo_test.png
