@@ -131,26 +131,26 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logoOK.jpg">
+    <Resource Include="img\logoOK.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BorgWarner.png">
+    <Resource Include="img\BorgWarner.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bg.jpg">
+    <Content Include="img\tlo_test.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="diagram.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="tlo.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="tlo_test.png">
+    <Resource Include="img\bg.jpg" />
+    <Resource Include="img\connect.png" />
+    <Resource Include="img\data.png" />
+    <Resource Include="img\diagram.png" />
+    <Resource Include="img\factory1.png" />
+    <Resource Include="img\person.png" />
+    <Content Include="img\tlo.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
