@@ -11,7 +11,7 @@ namespace Panel_Lidera_Linii
     /// </summary>
     public partial class raport : Window
     {
-        static string _connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+        static string _connectionString = ConfigurationManager.ConnectionStrings["ConnectionString-borg"].ConnectionString;
 
         SqlCommand cmd, cmd2;
         SqlDataAdapter adpt, adpt2;

@@ -12,7 +12,7 @@ namespace Panel_Lidera_Linii
     {
         //poniżej parametry połączenia z bazą danych //
         private static readonly string _connectionString =
-            ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            ConfigurationManager.ConnectionStrings["ConnectionString-borg"].ConnectionString;
 
         private SqlCommand cmd;
         private SqlDataAdapter adpt;
