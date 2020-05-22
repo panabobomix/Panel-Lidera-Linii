@@ -218,7 +218,7 @@
             </TextBlock.RenderTransform>
         </TextBlock>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bg.jpg" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="img/bg.jpg" Stretch="UniformToFill"/>
         </Grid.Background>
     </Grid>
 </Window>
