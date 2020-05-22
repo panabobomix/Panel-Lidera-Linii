@@ -10,7 +10,7 @@ namespace Panel_Lidera_Linii
     public partial class current_production : Window
     {
         private static readonly string _connectionString =
-            ConfigurationManager.ConnectionStrings["ConnectionString-borg"].ConnectionString;
+            ConfigurationManager.ConnectionStrings["ConnectionString.borg"].ConnectionString;
 
         private SqlCommand cmd, cmd2;
         private SqlDataAdapter adpt, adpt2;
