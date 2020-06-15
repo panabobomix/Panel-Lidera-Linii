@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
         Title="Aktualna Produkcja" Height="800" Width="1300" Background="#A9A9A9"
-        Topmost="True"
+        Topmost="false"
         
         >
     <Window.Resources>
@@ -43,7 +43,7 @@
 
 
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\tlo_test.png" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\tlo_test.png" Stretch="UniformToFill"/>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="641,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="TechnicBold"   ><Run Text="C01"/></TextBlock>
         <DataGrid x:Name="C03" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="236" Margin="638,228,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
@@ -117,7 +117,7 @@
                 <DataGridTextColumn Header="Ostatnia sztuka" Binding="{Binding CreationDate}" Width="135"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Pobierz Dane" HorizontalAlignment="Left" VerticalAlignment="Top" Width="278" Margin="969,643,0,0" Click="download_all" Height="69" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
+        <Button Content="Pobierz Dane" HorizontalAlignment="Left" VerticalAlignment="Top" Width="278" Margin="969,643,0,0" Click="download_TC" Height="69" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
         <DataGrid x:Name="quantity_c01" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="45" Margin="1135,46,-7,0" VerticalAlignment="Top" Width="112" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Wyprodukowano" Binding="{Binding pcs}" Width="200"/>
@@ -277,7 +277,7 @@
         <!--<test> -->
 
         <Image HorizontalAlignment="Left" Height="60" Margin="1193,652,0,0" VerticalAlignment="Top" Width="54" Source="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\data.png"/>
-        <Button Content="Test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="278" Margin="538,652,0,0" Click="download_all_test" Height="69" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
+        <Button Content="CORE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="278" Margin="596,643,0,0" Click="download_CORE" Height="69" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
 
 
     </Grid>
