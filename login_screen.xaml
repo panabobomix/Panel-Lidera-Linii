@@ -17,7 +17,7 @@
             <Label Content="Password" Foreground="White" />
             <PasswordBox x:Name="txtPassword" Background="#545d6a" Foreground="White" FontSize="18"/>
             <Button x:Name="btnSubmit" Click="btnSubmit_Click" Content="Zaloguj" Margin="40 10" Background="#545d6a" Foreground="White" FontSize="18" />
-            <Image HorizontalAlignment="Left" Height="63" Margin="145,0,0,0" VerticalAlignment="Top" Width="90" Source="BorgWarner.png"/>
+            <Image HorizontalAlignment="Left" Height="63" Margin="145,0,0,0" VerticalAlignment="Top" Width="90" Source="img/BorgWarner.png"/>
         </StackPanel>
     </Border>
 

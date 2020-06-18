@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using NLog;
+using Panel_Lidera_Linii.Helper;
+
 namespace Panel_Lidera_Linii
 {
     /// <summary>
@@ -19,6 +22,8 @@ namespace Panel_Lidera_Linii
     /// </summary>
     public partial class login_screen : Window
     {
+        protected readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        private static string _connectionString = Configuration.ConnectionString;
         public login_screen()
         {
             InitializeComponent();
@@ -27,7 +32,7 @@ namespace Panel_Lidera_Linii
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             // LOKALNA BAZA ZMIENIC NA POŁĄCZNIE NP Z BAZA BW
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=LoginDB; Integrated Security=True;"); // localdb lub localhost
+            SqlConnection sqlCon = new SqlConnection(_connectionString); // localdb lub localhost
             try
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
@@ -51,7 +56,7 @@ namespace Panel_Lidera_Linii
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                Logger.Fatal(ex);
             }
             finally
             {

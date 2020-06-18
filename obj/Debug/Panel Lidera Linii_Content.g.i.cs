@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("borgwarner.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/tlo_test.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/tlo.jpg")]
 
 

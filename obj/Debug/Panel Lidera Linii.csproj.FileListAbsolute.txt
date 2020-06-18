@@ -1,82 +1,178 @@
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\bin\Debug\Panel Lidera Linii.exe.config
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\bin\Debug\Panel Lidera Linii.exe
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\bin\Debug\Panel Lidera Linii.pdb
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.csprojAssemblyReference.cache
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\current_production.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\MainWindow.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\App.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.cache
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.lref
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\current_production.baml
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\MainWindow.baml
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.g.resources
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel_Lidera_Linii.Properties.Resources.resources
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.csproj.GenerateResource.cache
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.exe
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel Lidera Linii\obj\Debug\Panel Lidera Linii.pdb
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\bin\Debug\Panel Lidera Linii.exe.config
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\bin\Debug\Panel Lidera Linii.exe
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\bin\Debug\Panel Lidera Linii.pdb
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.csprojAssemblyReference.cache
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\current_production.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\MainWindow.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\zalogowani_operatorzy.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\App.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.cache
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.lref
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\current_production.baml
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\MainWindow.baml
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\zalogowani_operatorzy.baml
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.g.resources
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel_Lidera_Linii.Properties.Resources.resources
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.csproj.GenerateResource.cache
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.exe
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.pdb
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\img\tlo_test.png
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\img\tlo.jpg
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Nlog.config
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Panel Lidera Linii.exe.config
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Panel Lidera Linii.exe
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Panel Lidera Linii.pdb
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Castle.Core.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\NLog.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\NLog.Extensions.Logging.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\NLog.Web.AspNetCore.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Buffers.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Memory.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Castle.Core.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\NLog.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\NLog.Extensions.Logging.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\NLog.Web.AspNetCore.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Buffers.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Memory.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii.csprojAssemblyReference.cache
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii.exe.config
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Views\current_production.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\loading.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\login_screen.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\MainWindow.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\raport.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\zalogowani_operatorzy.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\App.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii_Content.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii_MarkupCompile.cache
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii_MarkupCompile.lref
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Views\current_production.baml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\loading.baml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\login_screen.baml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\MainWindow.baml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\raport.baml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\zalogowani_operatorzy.baml
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii.g.resources
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel_Lidera_Linii.Properties.Resources.resources
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii.csproj.GenerateResource.cache
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii.csproj.CopyComplete
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii.exe
+C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\Panel Lidera Linii.pdb
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\img\tlo_test.png
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\img\tlo.jpg
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Nlog.config
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Panel Lidera Linii.exe.config
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Panel Lidera Linii.exe
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Panel Lidera Linii.pdb
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Castle.Core.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Http.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.ObjectPool.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\NLog.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\NLog.Extensions.Logging.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\NLog.Web.AspNetCore.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Buffers.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Memory.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Castle.Core.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Http.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.Routing.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.AspNetCore.WebUtilities.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Hosting.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.ObjectPool.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\NLog.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\NLog.Extensions.Logging.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\NLog.Web.AspNetCore.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Buffers.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Memory.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.csprojAssemblyReference.cache
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\current_production.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.exe.config
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Views\current_production.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\loading.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\login_screen.g.cs
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\MainWindow.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\raport.g.cs
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\zalogowani_operatorzy.g.cs
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\App.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii_Content.g.cs
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.cache
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii_MarkupCompile.lref
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\current_production.baml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Views\current_production.baml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\loading.baml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\login_screen.baml
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\MainWindow.baml
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\raport.baml
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\zalogowani_operatorzy.baml
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.g.resources
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel_Lidera_Linii.Properties.Resources.resources
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.csproj.GenerateResource.cache
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.csproj.CopyComplete
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.exe
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Panel Lidera Linii.pdb
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\login_screen.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\login_screen.baml
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\loading.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\loading.baml
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Raport.g.cs
-C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\Raport.baml
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\bin\Debug\Panel Lidera Linii.exe.config
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\bin\Debug\Panel Lidera Linii.exe
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\bin\Debug\Panel Lidera Linii.pdb
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel Lidera Linii.csprojAssemblyReference.cache
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\current_production.g.cs
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\loading.g.cs
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\login_screen.g.cs
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\MainWindow.g.cs
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\raport.g.cs
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\zalogowani_operatorzy.g.cs
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\App.g.cs
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel Lidera Linii_MarkupCompile.cache
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel Lidera Linii_MarkupCompile.lref
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\current_production.baml
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\loading.baml
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\login_screen.baml
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\MainWindow.baml
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\raport.baml
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\zalogowani_operatorzy.baml
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel Lidera Linii.g.resources
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel_Lidera_Linii.Properties.Resources.resources
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel Lidera Linii.csproj.GenerateResource.cache
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel Lidera Linii.exe
-C:\Users\glib\Desktop\C# WPF\OSTATNIA DZIALAJACA WERSJA\Panel-Lidera-Linii-3bd14ddcd416a36bde4461808521a99c5dd1606f\obj\Debug\Panel Lidera Linii.pdb

@@ -8,7 +8,7 @@
         Title="Raport" Height="900" Width="1050" Background="#A9A9A9" >
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\img\tlo_test.png" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii/img/tlo_test.png" Stretch="UniformToFill"/>
         </Grid.Background>
         <TextBlock HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="TechnicBold" Margin="0,17,0,0"   ><Run Text="T01"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="272,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontFamily="TechnicBold"   ><Run Text="T02-42"/></TextBlock>

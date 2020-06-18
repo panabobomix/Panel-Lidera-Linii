@@ -1,28 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Configuration;
 using System.Data.SqlClient;
-using System.Data;
+using System.Windows;
+using NLog;
+using NLog.Web;
+using Panel_Lidera_Linii.Helper;
+using Panel_Lidera_Linii.Views;
+using Configuration = Panel_Lidera_Linii.Helper.Configuration;
+
 namespace Panel_Lidera_Linii
 {
     /// <summary>
-    /// Logika interakcji dla klasy MainWindow.xaml
+    ///     Logika interakcji dla klasy MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        
+//tutaj zmieniasz nazwę tej sekcji w App.config - ja nazywam name="ConnectionString", ty na przykład name="ConnectionString-borg" wiec zmieniasz na ConnectionString-borg
+        private static readonly string _connectionString = Configuration.ConnectionString;
+        private static readonly Logger Logger =  NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
 
         public MainWindow()
         {
@@ -31,26 +26,24 @@ namespace Panel_Lidera_Linii
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            current_production dashboard = new current_production();
+            var dashboard = new current_production();
             dashboard.Show();
-            loading dashboard2 = new loading();
-            dashboard2.Show();
 
+            //iiri - po co ten loagind?
+            // var dashboard2 = new loading();
+            // dashboard2.Show();
         }
 
         private void Button_person(object sender, RoutedEventArgs e)
         {
-            zalogowani_operatorzy dashboard = new zalogowani_operatorzy ();
+            var dashboard = new zalogowani_operatorzy();
             dashboard.Show();
         }
 
         private void connect_test(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString =
-                  "Data Source=10.217.240.26;" +
-                  "Initial Catalog=turboPCSProduction;" +
-                  "Integrated Security=SSPI;";
+            var con = new SqlConnection();
+            con.ConnectionString = _connectionString;
             {
                 try
                 {
@@ -61,14 +54,18 @@ namespace Panel_Lidera_Linii
                 {
                     MessageBox.Show("Połączenie nie nawiązane :(");
                 }
+                catch (Exception ex)
+                {
+                    Logger.Fatal(ex);
+                    MessageBox.Show(string.Format("[connect_test] Error: {0}", ex.Message));
+                }
             }
         }
 
-        
 
         private void download_raport(object sender, RoutedEventArgs e)
         {
-            raport dashboard3 = new raport();
+            var dashboard3 = new raport();
             dashboard3.Show();
         }
     }

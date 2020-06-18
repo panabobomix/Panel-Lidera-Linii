@@ -28,7 +28,6 @@ namespace Panel_Lidera_Linii
             timer.Interval = TimeSpan.FromMilliseconds(500);
             timer.Tick += timer_Tick;
             timer.Start();
-
         }
 
         void timer_Tick(object sender, EventArgs e)
@@ -36,18 +35,15 @@ namespace Panel_Lidera_Linii
             progress.Minimum = 0;
             progress.Maximum = 100;
 
-            if ( progress.Value < progress.Maximum)
+            if (progress.Value < progress.Maximum)
             {
-                progress.Value = progress.Value + 1 ;
-
+                progress.Value = progress.Value + 1;
             }
-            if (progress.Value  == 98)
-            {
-                MessageBox.Show(this,"Ładowanie zakończone");
-                
 
+            if (progress.Value == 98)
+            {
+                MessageBox.Show(this, "Ładowanie zakończone");
             }
         }
-
     }
 }
