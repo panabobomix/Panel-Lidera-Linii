@@ -7,6 +7,8 @@ using NLog.Web;
 using Panel_Lidera_Linii.Helper;
 using Panel_Lidera_Linii.Views;
 using Configuration = Panel_Lidera_Linii.Helper.Configuration;
+using System.Windows.Data;
+using System.Windows.Threading;
 
 namespace Panel_Lidera_Linii
 {
@@ -22,6 +24,19 @@ namespace Panel_Lidera_Linii
         public MainWindow()
         {
             InitializeComponent();
+            startclock();
+        }
+
+        private void startclock()
+        {
+            DispatcherTimer timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1);
+            timer.Tick += tickevent;
+            timer.Start();
+        }
+        private void tickevent(object sender, EventArgs e)
+        {
+            datelbl.Text = DateTime.Now.ToString();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -67,6 +82,12 @@ namespace Panel_Lidera_Linii
         {
             var dashboard3 = new raport();
             dashboard3.Show();
+        }
+
+        private void check_status(object sender, RoutedEventArgs e)
+        {
+            var status_dmc = new status_dmc();
+            status_dmc.Show();
         }
     }
 }

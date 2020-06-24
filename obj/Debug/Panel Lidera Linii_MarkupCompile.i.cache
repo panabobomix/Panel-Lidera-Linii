@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\obj\Debug\
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\obj\Debug\
 Panel_Lidera_Linii
 none
 false
 DEBUG;TRACE
-C:\Users\glib\Desktop\PANEL LIDERA DEVELOP\Panel-Lidera-Linii-develop_1.0.0.1\App.xaml
-6-311823972
+C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\App.xaml
+7-801113360
 21621795182
-34-861572778
-1521219992574
-Views\current_production.xaml;loading.xaml;login_screen.xaml;MainWindow.xaml;raport.xaml;zalogowani_operatorzy.xaml;
+35-679706379
+152-209197770
+status_dmc.xaml;Views\current_production.xaml;loading.xaml;login_screen.xaml;MainWindow.xaml;raport.xaml;zalogowani_operatorzy.xaml;
 
-True
+False
 

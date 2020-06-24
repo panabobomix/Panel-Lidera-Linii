@@ -25,14 +25,19 @@
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,240.625,0,0" TextWrapping="Wrap" Text="T05" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" Grid.Row="1" Foreground="White"   />
         <TextBlock HorizontalAlignment="Left" Height="26" Margin="200,271.625,0,0" TextWrapping="Wrap" Text="T06" VerticalAlignment="Top" Width="29" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.547,2.072" Grid.Row="1" Foreground="White"   />
         <Button Content="Aktualna Produkcja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,216,0,0" Height="41" Click="Button_Click" Grid.Row="1"/>
-        <Button Content="Zalogowani Operatorzy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="649,277.625,0,0" Height="41" Click="Button_person" Grid.Row="1"/>
+        <Button Content="Zalogowani Operatorzy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="649,288,0,0" Height="41" Click="Button_person" Grid.Row="1"/>
         <Button Content="Test połączenia SQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,157.625,0,0" Height="41" Click="connect_test" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="198" Margin="252,0,0,0" VerticalAlignment="Top" Width="268" Source="img/BorgWarner.png" Grid.RowSpan="2"/>
-        <Image HorizontalAlignment="Left" Height="49" Margin="589,208,0,0" VerticalAlignment="Top" Width="68" Source="img/factory1.png" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="49" Margin="589,154,0,0" VerticalAlignment="Top" Width="68" Source="img/connect.png" Grid.Row="4"/>
-        <Image HorizontalAlignment="Left" Height="57" Margin="388,146,0,0" VerticalAlignment="Top" Width="55" Source="img/diagram.png" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="57" Margin="589,272,0,0" VerticalAlignment="Top" Width="55" Source="img/person.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="198" Margin="247,10,0,0" VerticalAlignment="Top" Width="268" Source="img/BorgWarner.png" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="41" Margin="616,216,0,0" VerticalAlignment="Top" Width="41" Source="img/factory1.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="45" Margin="616,158,0,0" VerticalAlignment="Top" Width="41" Source="img/connect.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="393,154,0,0" VerticalAlignment="Top" Width="50" Source="img/diagram.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="57" Margin="589,280,0,0" VerticalAlignment="Top" Width="55" Source="img/person.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="41" Margin="393,216,0,0" VerticalAlignment="Top" Width="55" Source="img/checked.png" Grid.Row="1"/>
         <Button Content="Raport Produkcyjny" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="448,158,0,0" Height="41" Click="download_raport" Grid.Row="1"/>
+        <Button Content="Weryfikacja DMC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="448,216,0,0" Height="41" Click="check_status" Grid.Row="1"/>
+        <TextBlock Name="datelbl" HorizontalAlignment="Left" Margin="247,-1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="299" FontSize="30" FontWeight="Bold"><Run Text="TextBlock"/><InlineUIContainer>
+                <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+            </InlineUIContainer></TextBlock>
         <Grid.Background>
             <ImageBrush ImageSource="img/bg.jpg" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>

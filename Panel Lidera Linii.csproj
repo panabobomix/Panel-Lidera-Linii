@@ -197,6 +197,9 @@
     <Compile Include="raport.xaml.cs">
       <DependentUpon>raport.xaml</DependentUpon>
     </Compile>
+    <Compile Include="status_dmc.xaml.cs">
+      <DependentUpon>status_dmc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\B02.cs" />
     <Compile Include="ViewModels\C02.cs" />
     <Compile Include="ViewModels\C01.cs" />
@@ -213,6 +216,10 @@
     <Compile Include="zalogowani_operatorzy.xaml.cs">
       <DependentUpon>zalogowani_operatorzy.xaml</DependentUpon>
     </Compile>
+    <Page Include="status_dmc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\current_production.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -290,6 +297,9 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="img\checked.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Content Include="img\tlo_test.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
