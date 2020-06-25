@@ -20,6 +20,7 @@ namespace Panel_Lidera_Linii
         DataTable dt;
         SqlDataReader reader, reader2;
 
+
         private void raport_3(object sender, RoutedEventArgs e)
         {
             //Test Szczelności

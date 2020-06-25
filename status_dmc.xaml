@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
-        Title="Weryfikacja kodu DMC" Height="450" Width="800">
+        Title="Weryfikacja kodu DMC" Height="600
+        " Width="800">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii/img/tlo_test.png" Stretch="UniformToFill"/>
         </Grid.Background>
-        <DataGrid x:Name="grid_search" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="792" Margin="0,211,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+        <DataGrid x:Name="grid_search" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="792" Margin="0,358,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="160"/>
                 <DataGridTextColumn Header="Numer zlecenia" Binding="{Binding ProductionOrder}" Width="160"/>
@@ -21,5 +22,11 @@
         </DataGrid>
         <Button Content="Szukaj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="532,71,0,0" Click="search" Height="49" Background="#FF3385AC" FontSize="24" FontWeight="Bold"/>
         <TextBox x:Name="search_box" HorizontalAlignment="Left" Height="37" Margin="0,80,0,0" TextWrapping="Wrap" Text="Podaj kod DMC" VerticalAlignment="Top" Width="511" FontSize="22" FontFamily="Segoe UI Semibold"/>
+        <DataGrid x:Name="balancing" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="250" Margin="542,189,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Data" Binding="{Binding Datum}" Width="135"/>
+                <DataGridTextColumn Header="Status wyważania" Binding="{Binding status}" Width="130"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

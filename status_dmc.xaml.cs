@@ -29,7 +29,13 @@ namespace Panel_Lidera_Linii
         SqlDataAdapter adpt, adpt2;
         DataTable dt;
 
-       
+        private static string connectionStringHSP =
+               "Data Source=10.217.240.26;" +
+                 "Initial Catalog=HSP;" +
+                 "Integrated Security=SSPI;Connection Timeout=90";
+      
+        DataTable dt2;
+      
 
         SqlDataReader reader, reader2;
 
@@ -55,7 +61,22 @@ namespace Panel_Lidera_Linii
 
                 con.Close();
             }
+            //Zapytanie o status wyważania
+            using (SqlConnection con = new SqlConnection(connectionStringHSP))
+            {
+                con.Open(); //otwarcie połączenie
+                string sqlQuery = "select Datum, status from DWH_BA_Daten where LGNR like '" + search_box.Text + "'";
 
+
+                using (SqlDataAdapter b = new SqlDataAdapter(sqlQuery, con))
+                {
+                    DataTable dt = new DataTable();
+                    b.Fill(dt);
+                    balancing.ItemsSource = dt.DefaultView;
+                }
+
+                con.Close();
+            }
 
         }
     }
