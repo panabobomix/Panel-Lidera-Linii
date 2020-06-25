@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
         Title="Raport" Height="900" Width="1050" Background="#A9A9A9" >
-    <Grid>
+    <ScrollViewer>
+        <StackPanel>
+            <Grid>
+        
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii/img/tlo_test.png" Stretch="UniformToFill"/>
         </Grid.Background>
@@ -97,6 +100,9 @@
                 <DataGridTextColumn Header="Wyprodukowano" Binding="{Binding pcs}" Width="135"/>
             </DataGrid.Columns>
         </DataGrid>
-
+      
+           
     </Grid>
+        </StackPanel>
+    </ScrollViewer>
 </Window>
