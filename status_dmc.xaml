@@ -28,5 +28,6 @@
                 <DataGridTextColumn Header="Status wyważania" Binding="{Binding status}" Width="130"/>
             </DataGrid.Columns>
         </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" FontSize="36" FontWeight="Bold" Foreground="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" FontFamily="TechnicBold" Margin="542,151,0,0"   Text="HSCB"   />
     </Grid>
 </Window>

@@ -17,7 +17,7 @@ namespace Panel_Lidera_Linii
     /// </summary>
     public partial class MainWindow : Window
     {
-//tutaj zmieniasz nazwę tej sekcji w App.config - ja nazywam name="ConnectionString", ty na przykład name="ConnectionString-borg" wiec zmieniasz na ConnectionString-borg
+
         private static readonly string _connectionString = Configuration.ConnectionString;
         private static readonly Logger Logger =  NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
 
@@ -25,6 +25,7 @@ namespace Panel_Lidera_Linii
         {
             InitializeComponent();
             startclock();
+            MessageBox.Show(Application.Current.MainWindow, "Aplikacja, którą będzisz używał/używała jest w wersji testowej. Wszelkie informacje oraz uwagi proszę zgłaszać do:       Grzegorz Lib   email: glib@borgwarner.com", "Informacja", MessageBoxButton.OK, MessageBoxImage.Exclamation, MessageBoxResult.Cancel);
         }
 
         private void startclock()
@@ -44,9 +45,7 @@ namespace Panel_Lidera_Linii
             var dashboard = new current_production();
             dashboard.Show();
 
-            //iiri - po co ten loagind?
-            // var dashboard2 = new loading();
-            // dashboard2.Show();
+           
         }
 
         private void Button_person(object sender, RoutedEventArgs e)
