@@ -31,6 +31,7 @@ namespace Panel_Lidera_Linii
             InitializeComponent();
             startclock();
             MessageBox.Show(Application.Current.MainWindow, "Aplikacja, którą będzisz używał/używała jest w wersji testowej. Wszelkie informacje oraz uwagi proszę zgłaszać do:       Grzegorz Lib   email: glib@borgwarner.com", "Informacja", MessageBoxButton.OK, MessageBoxImage.Exclamation, MessageBoxResult.Cancel);
+
         }
         /// <summary>
         /// 

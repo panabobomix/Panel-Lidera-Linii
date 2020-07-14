@@ -39,6 +39,22 @@ namespace Panel_Lidera_Linii
                 return true;
             }
         }
+        public static bool kod_lid(string b)
+        {
+            
+           if (b == "")
+            {
+                return false;
+            }
+            else if (b.Length >= 10)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
 
 
 
