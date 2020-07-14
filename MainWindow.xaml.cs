@@ -20,14 +20,21 @@ namespace Panel_Lidera_Linii
 
         private static readonly string _connectionString = Configuration.ConnectionString;
         private static readonly Logger Logger =  NLogBuilder.ConfigureNLog("NLog.config").GetCurrentClassLogger();
-
+        /// <summary>
+        /// Głowna metoda - opisywac krocej
+        /// </summary>
+        /// <remarks>
+        /// testttt - opisac dluzej
+        /// </remarks>
         public MainWindow()
         {
             InitializeComponent();
             startclock();
             MessageBox.Show(Application.Current.MainWindow, "Aplikacja, którą będzisz używał/używała jest w wersji testowej. Wszelkie informacje oraz uwagi proszę zgłaszać do:       Grzegorz Lib   email: glib@borgwarner.com", "Informacja", MessageBoxButton.OK, MessageBoxImage.Exclamation, MessageBoxResult.Cancel);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         private void startclock()
         {
             DispatcherTimer timer = new DispatcherTimer();
@@ -35,11 +42,26 @@ namespace Panel_Lidera_Linii
             timer.Tick += tickevent;
             timer.Start();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void tickevent(object sender, EventArgs e)
         {
             datelbl.Text = DateTime.Now.ToString();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender">
+        /// Sender - określa obiekt który wywołał dany event 
+        /// </param>
+        /// <param name="e">
+        /// Zawiera informacje o stanie i dane zdarzenia powiazane ze zdarzeniem kierowanym.
+        /// </param>
+        /// 
+      
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var dashboard = new current_production();
@@ -47,13 +69,21 @@ namespace Panel_Lidera_Linii
 
            
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_person(object sender, RoutedEventArgs e)
         {
             var dashboard = new zalogowani_operatorzy();
             dashboard.Show();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void connect_test(object sender, RoutedEventArgs e)
         {
             var con = new SqlConnection();
@@ -76,13 +106,21 @@ namespace Panel_Lidera_Linii
             }
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void download_raport(object sender, RoutedEventArgs e)
         {
             var dashboard3 = new raport();
             dashboard3.Show();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void check_status(object sender, RoutedEventArgs e)
         {
             var status_dmc = new status_dmc();

@@ -23,7 +23,11 @@ namespace Panel_Lidera_Linii
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void downlad_all(object sender, RoutedEventArgs e)
         {
             using (var con = new SqlConnection(_connectionString))

@@ -28,7 +28,11 @@ namespace Panel_Lidera_Linii
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             // LOKALNA BAZA ZMIENIC NA POŁĄCZNIE NP Z BAZA BW

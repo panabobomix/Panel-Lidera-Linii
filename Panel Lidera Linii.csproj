@@ -198,6 +198,7 @@
     <Compile Include="Model\tblAtlasCopco.cs" />
     <Compile Include="Model\tblDMC.cs" />
     <Compile Include="Model\tblHeaderData.cs" />
+    <Compile Include="Pomocniczna.cs" />
     <Compile Include="raport.xaml.cs">
       <DependentUpon>raport.xaml</DependentUpon>
     </Compile>

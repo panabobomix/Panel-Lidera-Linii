@@ -38,46 +38,63 @@ namespace Panel_Lidera_Linii
       
 
         SqlDataReader reader, reader2;
-
+        /// <summary>
+        /// 
+        /// </summary>
         public status_dmc()
         {
             InitializeComponent();
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void search(object sender, RoutedEventArgs e)
         {
+
             //Zapytanie o sztukę
-            using (SqlConnection con = new SqlConnection(_connectionString))
+            if (Pomocniczna.popr_kod(search_box.Text))
             {
-                con.Open(); //otwarcie połączenie
-                string sqlQuery = "select tblHeaderData.CreationDate,MaterialNo,ProductionOrder,InventoryNo,Worker from(tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN) where tblDMC.DMC like '" +search_box.Text + "'order by tblDMC.CreationDate DESC";
-                using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    a.Fill(dt);
-                    grid_search.ItemsSource = dt.DefaultView;
-                }
+                
 
-                con.Close();
+                using (SqlConnection con = new SqlConnection(_connectionString))
+                {
+                    con.Open(); //otwarcie połączenie
+                    string sqlQuery = "select tblHeaderData.CreationDate,MaterialNo,ProductionOrder,InventoryNo,Worker from(tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN) where tblDMC.DMC like '" + search_box.Text + "'order by tblDMC.CreationDate DESC";
+                    using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
+                    {
+                        DataTable dt = new DataTable();
+                        a.Fill(dt);
+                        grid_search.ItemsSource = dt.DefaultView;
+                    }
+
+                    con.Close();
+                }
+                //Zapytanie o status wyważania
+                using (SqlConnection con = new SqlConnection(connectionStringHSP))
+                {
+                    con.Open(); //otwarcie połączenie
+                    string sqlQuery = "select Datum, status from DWH_BA_Daten where LGNR like '" + search_box.Text + "'";
+
+
+                    using (SqlDataAdapter b = new SqlDataAdapter(sqlQuery, con))
+                    {
+                        DataTable dt = new DataTable();
+                        b.Fill(dt);
+                        balancing.ItemsSource = dt.DefaultView;
+                    }
+
+                    con.Close();
+                }
             }
-            //Zapytanie o status wyważania
-            using (SqlConnection con = new SqlConnection(connectionStringHSP))
+            else
             {
-                con.Open(); //otwarcie połączenie
-                string sqlQuery = "select Datum, status from DWH_BA_Daten where LGNR like '" + search_box.Text + "'";
-
-
-                using (SqlDataAdapter b = new SqlDataAdapter(sqlQuery, con))
-                {
-                    DataTable dt = new DataTable();
-                    b.Fill(dt);
-                    balancing.ItemsSource = dt.DefaultView;
-                }
-
-                con.Close();
+                MessageBox.Show("Niepoprawne dane","Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
         }
+
     }
 }

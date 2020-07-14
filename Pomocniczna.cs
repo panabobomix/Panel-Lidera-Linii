@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Panel_Lidera_Linii
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public static class Pomocniczna
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="a">
+        /// Parametr przyjmuje łańcuch znaków STRING
+        /// </param>
+        /// <returns>
+        /// Zwraca wartość BOOL
+        /// </returns>
+        public static bool popr_kod(string a)
+        {
+            if (a.Contains("%"))
+            {
+               return  false;
+            }
+           else  if (a == "")
+            {
+                return false;
+            }
+            else if (a.Length >=40)
+            {
+                return false ;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
+
+    }
+}

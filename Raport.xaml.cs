@@ -20,7 +20,11 @@ namespace Panel_Lidera_Linii
         DataTable dt;
         SqlDataReader reader, reader2;
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void raport_3(object sender, RoutedEventArgs e)
         {
             //Test Szczelności
@@ -239,7 +243,11 @@ namespace Panel_Lidera_Linii
                 con.Close();
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void raport_2(object sender, RoutedEventArgs e)
         {
             //Test Szczelności
@@ -463,7 +471,11 @@ namespace Panel_Lidera_Linii
         {
             InitializeComponent();
         }
-
+/// <summary>
+/// 
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
         private void raport_1(object sender, RoutedEventArgs e)
         {
             //Test Szczelności
