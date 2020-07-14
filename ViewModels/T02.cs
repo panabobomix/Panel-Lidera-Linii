@@ -12,6 +12,9 @@ using Panel_Lidera_Linii.Model;
 
 namespace Panel_Lidera_Linii.ViewModels
 {
+    /// <summary>
+    /// Klasa dla T02
+    /// </summary>
    public class T02:LoggerBase
     {
         private static string _connectionString = Configuration.ConnectionString;

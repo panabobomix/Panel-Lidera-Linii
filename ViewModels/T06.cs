@@ -7,6 +7,9 @@ using Panel_Lidera_Linii.Model;
 
 namespace Panel_Lidera_Linii.ViewModels
 {
+    /// <summary>
+    /// Klasa dla T06
+    /// </summary>
     public class T06 : LoggerBase
     {
         private static readonly string ConnectionString = Configuration.ConnectionString;

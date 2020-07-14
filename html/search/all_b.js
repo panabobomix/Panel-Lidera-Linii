@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['zalogowani_5foperatorzy_44',['zalogowani_operatorzy',['../class_panel___lidera___linii_1_1zalogowani__operatorzy.html',1,'Panel_Lidera_Linii.zalogowani_operatorzy'],['../class_panel___lidera___linii_1_1zalogowani__operatorzy.html#a7f11bbbcff4d879f2a64302f8d54fe38',1,'Panel_Lidera_Linii.zalogowani_operatorzy.zalogowani_operatorzy()']]],
-  ['zalogowani_5foperatorzy_2examl_2ecs_45',['zalogowani_operatorzy.xaml.cs',['../zalogowani__operatorzy_8xaml_8cs.html',1,'']]]
+  ['search_41',['search',['../class_panel___lidera___linii_1_1status__dmc.html#aa98d0b486cd65a0336798d829b124d2d',1,'Panel_Lidera_Linii::status_dmc']]],
+  ['startclock_42',['startclock',['../class_panel___lidera___linii_1_1_main_window.html#adfd892d0250a468091d45f1e0d49ca6d',1,'Panel_Lidera_Linii::MainWindow']]],
+  ['status_5fdmc_43',['status_dmc',['../class_panel___lidera___linii_1_1status__dmc.html',1,'Panel_Lidera_Linii.status_dmc'],['../class_panel___lidera___linii_1_1status__dmc.html#a834e5275b3653fe5efc2fcfc2a547fc8',1,'Panel_Lidera_Linii.status_dmc.status_dmc()']]],
+  ['status_5fdmc_2examl_2ecs_44',['status_dmc.xaml.cs',['../status__dmc_8xaml_8cs.html',1,'']]]
 ];

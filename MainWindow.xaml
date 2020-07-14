@@ -38,6 +38,7 @@
         <TextBlock Name="datelbl" HorizontalAlignment="Left" Margin="247,-1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="299" FontSize="30" FontWeight="Bold"><Run Text="TextBlock"/><InlineUIContainer>
                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
             </InlineUIContainer></TextBlock>
+        <Button Content="Logowanie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="38,0,0,0" Height="41" Click="login_nr" Grid.Row="1"/>
         <Grid.Background>
             <ImageBrush ImageSource="img/bg.jpg" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>

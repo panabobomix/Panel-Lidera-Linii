@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['search_38',['search',['../class_panel___lidera___linii_1_1status__dmc.html#aa98d0b486cd65a0336798d829b124d2d',1,'Panel_Lidera_Linii::status_dmc']]],
-  ['startclock_39',['startclock',['../class_panel___lidera___linii_1_1_main_window.html#adfd892d0250a468091d45f1e0d49ca6d',1,'Panel_Lidera_Linii::MainWindow']]],
-  ['status_5fdmc_40',['status_dmc',['../class_panel___lidera___linii_1_1status__dmc.html',1,'Panel_Lidera_Linii.status_dmc'],['../class_panel___lidera___linii_1_1status__dmc.html#a834e5275b3653fe5efc2fcfc2a547fc8',1,'Panel_Lidera_Linii.status_dmc.status_dmc()']]],
-  ['status_5fdmc_2examl_2ecs_41',['status_dmc.xaml.cs',['../status__dmc_8xaml_8cs.html',1,'']]]
+  ['panel_5flidera_5flinii_30',['Panel_Lidera_Linii',['../namespace_panel___lidera___linii.html',1,'']]],
+  ['pomocniczna_31',['Pomocniczna',['../class_panel___lidera___linii_1_1_pomocniczna.html',1,'Panel_Lidera_Linii']]],
+  ['pomocniczna_2ecs_32',['Pomocniczna.cs',['../_pomocniczna_8cs.html',1,'']]],
+  ['popr_5fkod_33',['popr_kod',['../class_panel___lidera___linii_1_1_pomocniczna.html#af08ed6de67e2d44019f25b41fa895226',1,'Panel_Lidera_Linii::Pomocniczna']]]
 ];

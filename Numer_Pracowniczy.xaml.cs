@@ -17,6 +17,10 @@ namespace Panel_Lidera_Linii
     /// <summary>
     /// Logika interakcji dla klasy Numer_Pracowniczy.xaml
     /// </summary>
+    /// 
+    /// <remarks>
+    /// Reakcja na button zatwierdż, pojawienie sie messagebox'a z informacją ze numer zatwierdzony. Domyślnie weryfikowane w bazie.  
+    /// </remarks>
     public partial class Numer_Pracowniczy : Window
     {
         public Numer_Pracowniczy()
@@ -26,7 +30,18 @@ namespace Panel_Lidera_Linii
 
         private void zatwierdz(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Numer został zatwierdzony");
+            if (Pomocniczna.kod_lid(nr_prac.Text))
+            {
+                {
+                    MessageBox.Show("Numer został zatwierdzony");
+                }
+
+            }
+
+            else
+            {
+                MessageBox.Show("Niepoprawne dane", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
-    }
+}
 }

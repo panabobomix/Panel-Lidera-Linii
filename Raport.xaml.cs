@@ -23,8 +23,12 @@ namespace Panel_Lidera_Linii
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">
+        /// Sender - określa obiekt który wywołał dany event 
+        /// </param>
+        /// <param name="e">
+        /// Zawiera informacje o stanie i dane zdarzenia powiazane ze zdarzeniem kierowanym.
+        /// </param>
         private void raport_3(object sender, RoutedEventArgs e)
         {
             //Test Szczelności
@@ -246,8 +250,12 @@ namespace Panel_Lidera_Linii
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        /// <param name="sender">
+        /// Sender - określa obiekt który wywołał dany event 
+        /// </param>
+        /// <param name="e">
+        /// Zawiera informacje o stanie i dane zdarzenia powiazane ze zdarzeniem kierowanym.
+        /// </param>
         private void raport_2(object sender, RoutedEventArgs e)
         {
             //Test Szczelności
@@ -471,11 +479,15 @@ namespace Panel_Lidera_Linii
         {
             InitializeComponent();
         }
-/// <summary>
-/// 
-/// </summary>
-/// <param name="sender"></param>
-/// <param name="e"></param>
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender">
+        /// Sender - określa obiekt który wywołał dany event 
+        /// </param>
+        /// <param name="e">
+        /// Zawiera informacje o stanie i dane zdarzenia powiazane ze zdarzeniem kierowanym.
+        /// </param>
         private void raport_1(object sender, RoutedEventArgs e)
         {
             //Test Szczelności

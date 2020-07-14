@@ -12,6 +12,9 @@ using Panel_Lidera_Linii.Model;
 
 namespace Panel_Lidera_Linii.ViewModels
 {
+    /// <summary>
+    /// Klasa dla kodu liderskiego
+    /// </summary>
    public class KodLiderski:LoggerBase
     {
         private static string _connectionString = Configuration.ConnectionString;

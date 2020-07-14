@@ -12,6 +12,9 @@ using Panel_Lidera_Linii.Model;
 
 namespace Panel_Lidera_Linii.ViewModels
 {
+    /// <summary>
+    /// Klasa dla C03
+    /// </summary>
    public class C03:LoggerBase
     {
         private static string _connectionString = Configuration.ConnectionString;

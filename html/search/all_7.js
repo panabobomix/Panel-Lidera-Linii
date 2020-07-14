@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['panel_5flidera_5flinii_27',['Panel_Lidera_Linii',['../namespace_panel___lidera___linii.html',1,'']]],
-  ['pomocniczna_28',['Pomocniczna',['../class_panel___lidera___linii_1_1_pomocniczna.html',1,'Panel_Lidera_Linii']]],
-  ['pomocniczna_2ecs_29',['Pomocniczna.cs',['../_pomocniczna_8cs.html',1,'']]],
-  ['popr_5fkod_30',['popr_kod',['../class_panel___lidera___linii_1_1_pomocniczna.html#af08ed6de67e2d44019f25b41fa895226',1,'Panel_Lidera_Linii::Pomocniczna']]]
+  ['mainwindow_25',['MainWindow',['../class_panel___lidera___linii_1_1_main_window.html',1,'Panel_Lidera_Linii.MainWindow'],['../class_panel___lidera___linii_1_1_main_window.html#a9ddbcefa805a2f972f2bbcbdb1783918',1,'Panel_Lidera_Linii.MainWindow.MainWindow()']]],
+  ['mainwindow_2examl_2ecs_26',['MainWindow.xaml.cs',['../_main_window_8xaml_8cs.html',1,'']]],
+  ['messenger_27',['Messenger',['../class_panel___lidera___linii_1_1_app.html#a1013ea8cca109ae4bc453cba6cd39457',1,'Panel_Lidera_Linii::App']]]
 ];

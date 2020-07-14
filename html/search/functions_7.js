@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['search_78',['search',['../class_panel___lidera___linii_1_1status__dmc.html#aa98d0b486cd65a0336798d829b124d2d',1,'Panel_Lidera_Linii::status_dmc']]],
-  ['startclock_79',['startclock',['../class_panel___lidera___linii_1_1_main_window.html#adfd892d0250a468091d45f1e0d49ca6d',1,'Panel_Lidera_Linii::MainWindow']]],
-  ['status_5fdmc_80',['status_dmc',['../class_panel___lidera___linii_1_1status__dmc.html#a834e5275b3653fe5efc2fcfc2a547fc8',1,'Panel_Lidera_Linii::status_dmc']]]
+  ['popr_5fkod_81',['popr_kod',['../class_panel___lidera___linii_1_1_pomocniczna.html#af08ed6de67e2d44019f25b41fa895226',1,'Panel_Lidera_Linii::Pomocniczna']]]
 ];

@@ -18,7 +18,7 @@ namespace Panel_Lidera_Linii
         /// Parametr przyjmuje łańcuch znaków STRING
         /// </param>
         /// <returns>
-        /// Zwraca wartość BOOL
+        /// Zwraca wartość BOOL, która następnie jest testowana.
         /// </returns>
         public static bool popr_kod(string a)
         {
@@ -39,6 +39,15 @@ namespace Panel_Lidera_Linii
                 return true;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="b">
+        /// Parametr przyjmuje łańcuch znaków STRING
+        /// </param>
+        /// <returns>
+        /// Zwraca wartość BOOL, która następnie jest testowana.
+        /// </returns>
         public static bool kod_lid(string b)
         {
             
