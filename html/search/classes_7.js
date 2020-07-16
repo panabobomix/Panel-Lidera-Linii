@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zalogowani_5foperatorzy_58',['zalogowani_operatorzy',['../class_panel___lidera___linii_1_1zalogowani__operatorzy.html',1,'Panel_Lidera_Linii']]]
+  ['zalogowani_5foperatorzy_59',['zalogowani_operatorzy',['../class_panel___lidera___linii_1_1zalogowani__operatorzy.html',1,'Panel_Lidera_Linii']]]
 ];
