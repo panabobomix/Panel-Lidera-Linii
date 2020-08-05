@@ -163,10 +163,6 @@ namespace Panel_Lidera_Linii
             status_dmc.Show();
         }
 
-        private void login_nr(object sender, RoutedEventArgs e)
-        {
-            var Numer_Pracowniczy = new Numer_Pracowniczy();
-            Numer_Pracowniczy.Show();
-        }
+        
     }
 }

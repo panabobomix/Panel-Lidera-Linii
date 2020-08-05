@@ -9,8 +9,9 @@
         " Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii/img/tlo_test.png" Stretch="UniformToFill"/>
+            <ImageBrush ImageSource="V:\12 Production\Technicy Operacyjni CV\APP\bin\Debug\img\tlo_test.png" Stretch="UniformToFill"/>
         </Grid.Background>
+
         <DataGrid x:Name="grid_search" ItemsSource="{Binding}"    HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="792" Margin="0,358,0,0" AutoGenerateColumns="False" Background="Gray" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" IsHitTestVisible="False"  >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Material Number" Binding="{Binding MaterialNo}" Width="160"/>

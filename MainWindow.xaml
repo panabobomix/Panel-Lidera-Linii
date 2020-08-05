@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Panel_Lidera_Linii"
         mc:Ignorable="d"
-        Title="Panel Lidera Linii" Height="450" Width="800" Background="#A9A9A9" >
+        Title="Panel Lidera Linii" Height="450" Width="800" Background="#A9A9A9" MaxWidth="800" MaxHeight="450" MinWidth="800" MinHeight="450" >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="72*"/>
@@ -27,20 +27,19 @@
         <Button Content="Aktualna Produkcja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,216,0,0" Height="41" Click="Button_Click" Grid.Row="1"/>
         <Button Content="Zalogowani Operatorzy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="133" Margin="649,288,0,0" Height="41" Click="Button_person" Grid.Row="1"/>
         <Button Content="Test połączenia SQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="662,157.625,0,0" Height="41" Click="connect_test" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="198" Margin="247,10,0,0" VerticalAlignment="Top" Width="268" Source="img/BorgWarner.png" Grid.RowSpan="2"/>
+        <Image HorizontalAlignment="Left" Height="198" Margin="10,10,0,0" VerticalAlignment="Top" Width="268" Source="img/BorgWarner.png" Grid.RowSpan="2"/>
         <Image HorizontalAlignment="Left" Height="41" Margin="616,216,0,0" VerticalAlignment="Top" Width="41" Source="img/factory1.png" Grid.Row="1"/>
         <Image HorizontalAlignment="Left" Height="45" Margin="616,158,0,0" VerticalAlignment="Top" Width="41" Source="img/connect.png" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="49" Margin="393,154,0,0" VerticalAlignment="Top" Width="50" Source="img/diagram.png" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="49" Margin="416,154,0,0" VerticalAlignment="Top" Width="50" Source="img/diagram.png" Grid.Row="1"/>
         <Image HorizontalAlignment="Left" Height="57" Margin="589,280,0,0" VerticalAlignment="Top" Width="55" Source="img/person.png" Grid.Row="1"/>
-        <Image HorizontalAlignment="Left" Height="41" Margin="393,216,0,0" VerticalAlignment="Top" Width="55" Source="img/checked.png" Grid.Row="1"/>
-        <Button Content="Raport Produkcyjny" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="448,158,0,0" Height="41" Click="download_raport" Grid.Row="1"/>
-        <Button Content="Weryfikacja DMC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="448,216,0,0" Height="41" Click="check_status" Grid.Row="1"/>
-        <TextBlock Name="datelbl" HorizontalAlignment="Left" Margin="247,-1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="299" FontSize="30" FontWeight="Bold"><Run Text="TextBlock"/><InlineUIContainer>
+        <Image HorizontalAlignment="Left" Height="41" Margin="416,216,0,0" VerticalAlignment="Top" Width="50" Source="img/checked.png" Grid.Row="1"/>
+        <Button Content="Raport Produkcyjny" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="471,158,0,0" Height="41" Click="download_raport" Grid.Row="1"/>
+        <Button Content="Weryfikacja DMC" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="471,216,0,0" Height="41" Click="check_status" Grid.Row="1"/>
+        <TextBlock Name="datelbl" HorizontalAlignment="Left" Margin="247,-1,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="299" FontSize="30" FontWeight="Bold" Foreground="#FFC5C5C5"><Run Text="TextBlock"/><InlineUIContainer>
                 <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
             </InlineUIContainer></TextBlock>
-        <Button Content="Logowanie" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="38,0,0,0" Height="41" Click="login_nr" Grid.Row="1"/>
         <Grid.Background>
-            <ImageBrush ImageSource="img/bg.jpg" Stretch="UniformToFill"></ImageBrush>
+            <ImageBrush ImageSource="img/bg-car.jpg" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
     </Grid>
 </Window>
