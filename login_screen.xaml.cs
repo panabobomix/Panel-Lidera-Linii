@@ -22,8 +22,8 @@ namespace Panel_Lidera_Linii
     /// </summary>
     public partial class login_screen : Window
     {
-        protected readonly Logger Logger = LogManager.GetCurrentClassLogger();
-        private static string _connectionString = Configuration.ConnectionString;
+        //protected readonly Logger Logger = LogManager.GetCurrentClassLogger();
+        //private static string _connectionString = Configuration.ConnectionString;
         public login_screen()
         {
             InitializeComponent();
@@ -33,19 +33,27 @@ namespace Panel_Lidera_Linii
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
+        //private static string connectionString_login = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DATADIRECTORY|\\USERS_DATABASE.mdf;Integrated Security=True";
+        private static string connectionString_login = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
+            "AttachDbFilename= V:\\12 Production\\Technicy Operacyjni CV\\APP\\TEST\\Debug\\USERS_DATABASE.mdf;" +
+            "Integrated Security=True";
+
+
+
+
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
             // LOKALNA BAZA ZMIENIC NA POŁĄCZNIE NP Z BAZA BW
-            SqlConnection sqlCon = new SqlConnection(_connectionString); // localdb lub localhost
+            SqlConnection sqlCon = new SqlConnection(connectionString_login); // localdb lub localhost
             try
             {
                 if (sqlCon.State == System.Data.ConnectionState.Closed)
                     sqlCon.Open();
-                String query = "SELECT COUNT(1) FROM tblUser WHERE Username=@Username AND Password=@Password";
+                String query = "SELECT COUNT(1) FROM users WHERE login=@login AND password=@password";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 sqlCmd.CommandType = System.Data.CommandType.Text;
-                sqlCmd.Parameters.AddWithValue("@Username", txtUsername.Text);
-                sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Password);
+                sqlCmd.Parameters.AddWithValue("@login", txtUsername.Text);
+                sqlCmd.Parameters.AddWithValue("@password", txtPassword.Password);
                 int count = Convert.ToInt32(sqlCmd.ExecuteScalar());
                 if (count == 1)
                 {
@@ -60,11 +68,11 @@ namespace Panel_Lidera_Linii
             }
             catch (Exception ex)
             {
-                Logger.Fatal(ex);
+                MessageBox.Show(ex.Message);
             }
             finally
             {
-
+                sqlCon.Close();
             }
         }
     }

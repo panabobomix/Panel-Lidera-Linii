@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\glib\Desktop\C# WPF\Panel  Lidera Linii\Panel-Lidera-Linii\Panel-Lidera-Linii\App.xaml
-91038987924
-21621795182
-381731730646
+8-470076309
+4-510231112
+37-1189097191
 153-390217142
-Logowanie_lokalne.xaml;Numer_Pracowniczy.xaml;status_dmc.xaml;Views\current_production.xaml;loading.xaml;login_screen.xaml;MainWindow.xaml;raport.xaml;zalogowani_operatorzy.xaml;
+Login_screen-local.xaml;Numer_Pracowniczy.xaml;status_dmc.xaml;Views\current_production.xaml;loading.xaml;MainWindow.xaml;raport.xaml;zalogowani_operatorzy.xaml;
 
-True
+False
 

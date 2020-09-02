@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("users_database.mdf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("users_database_log.ldf")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/tlo_test.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("img/tlo.jpg")]
 
