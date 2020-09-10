@@ -28,14 +28,13 @@ namespace Panel_Lidera_Linii.Helper
                     }
 
                     if (
-                        _dataRow.Table.Columns.Contains("hours") &&
-                        _dataRow.Table.Columns.Contains("time"))
+                        _dataRow.Table.Columns.Contains("hours"))
                     {
                         dataItems.Last.Clear();
                         dataItems.Last.Add(new tblAtlasCopcoView()
                         {
-                            hours = _dataRow["hours"].ToString(),
-                            time = _dataRow["time"].ToString()
+                            hours = _dataRow["hours"].ToString()
+                           
                         });
                     }
 
@@ -49,6 +48,8 @@ namespace Panel_Lidera_Linii.Helper
                             pcs = _dataRow["pcs"].ToString()
                         });
                     }
+
+                    
                 });
             }
             catch (Exception ex)

@@ -45,14 +45,22 @@ namespace Panel_Lidera_Linii.ViewModels
                             " Order by tblHeaderData.CreationDate DESC", _filter.InventoryNo);
 
                         //C04 ile sztuk wyprodukowanych
-                        //TODO czemu tutaj jest LIKE??
+                        /* 
+                         * Stare zapytanie testowe pod spodem nowe
                         var sqlQuery3 = String.Format("select TOP 1 Count (DISTINCT tblDMC.DMC) as 'pcs'" +
                                                       " from tblHeaderData" +
                                                       " inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN" +
                                                       " where tblHeaderData.InventoryNo = '{0}' " +
                                                       " and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511') group by tblHeaderData.ProductionOrder order by MAX(tblDMC.CreationDate) DESC",
                             _filter.InventoryNo);
-
+*/
+                        var sqlQuery3 = String.Format("select TOP 1 Count " +
+                                                     " (tblCWHeating.Status ) as 'pcs'" +
+                                                     " from tblHeaderData" +
+                                                     " inner join tblCWHeating on tblHeaderData.psn = tblCWHeating.PSN" +
+                                                     " where tblHeaderData.InventoryNo = '{0}'" +
+                                                     " and  tblCWHeating.Status = '1'" +
+                                                     " group by tblHeaderData.ProductionOrder order by MAX(tblCWHeating.CreationDate) DESC", _filter.InventoryNo);
                         using (var a = new SqlDataAdapter(sqlQuery, con))
                         {
                             var dt = new DataTable();

@@ -15,6 +15,7 @@ using Panel_Lidera_Linii.ViewModels;
 namespace Panel_Lidera_Linii.Views
 {
     public partial class current_production : Window
+
     {
         protected readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
@@ -29,5 +30,6 @@ namespace Panel_Lidera_Linii.Views
                 Logger.Fatal(ex);
             }
         }
+
     }
 }

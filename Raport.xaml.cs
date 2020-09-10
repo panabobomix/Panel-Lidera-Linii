@@ -264,7 +264,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '111114' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '111114' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -282,7 +282,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421050' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE())and tblHeaderData.InventoryNo = '421050' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -301,7 +301,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421913' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421913' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -319,7 +319,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '444444' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '444444' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -337,7 +337,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421008' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421008' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -354,7 +354,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421914' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421914' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -372,7 +372,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421052' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421052' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -390,7 +390,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421978' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421978' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -408,7 +408,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421022' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421022' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -426,7 +426,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '422261' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '422261' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -444,7 +444,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '4211791' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '4211791' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -462,7 +462,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421998' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '15:00' and '23:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421998' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -496,7 +496,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '111114' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '111114' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -516,7 +516,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421050' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421050' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -535,7 +535,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421913' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421913' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -553,7 +553,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '444444' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '444444' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -571,7 +571,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421008' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421008' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -588,7 +588,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421914' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421914' and (tblDMC.DMC like '20200%' OR tblDMC.DMC like '800511')" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -606,7 +606,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421052' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421052' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -624,7 +624,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421978' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421978' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -642,7 +642,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421022' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421022' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -660,7 +660,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '422261' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '422261' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -678,7 +678,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '4211791' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '4211791' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {
@@ -696,7 +696,7 @@ namespace Panel_Lidera_Linii
                 con.Open(); //otwarcie połączenie
                 string sqlQuery = "select TOP 10 tblHeaderData.MaterialNo, Count (DISTINCT tblDMC.DMC) as'pcs'" +
                                   "from (tblHeaderData inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN)" +
-                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > GETDATE()-1 and tblHeaderData.InventoryNo = '421998' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
+                                  "WHERE CAST(tblDMC.CreationDate AS TIME) BETWEEN '07:00' and '15:00'and tblDMC.CreationDate > DATEADD(hh,-16,GETDATE()) and tblHeaderData.InventoryNo = '421998' and tblDMC.CodeAnalysisText = 'BidiProcess'" +
                                   "group by tblHeaderData.MaterialNo order by MAX(tblDMC.CreationDate) DESC";
                 using (SqlDataAdapter a = new SqlDataAdapter(sqlQuery, con))
                 {

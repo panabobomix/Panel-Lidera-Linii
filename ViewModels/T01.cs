@@ -32,16 +32,17 @@ namespace Panel_Lidera_Linii.ViewModels
                         var sqlQuery = String.Format(
                             "select TOP 1 MaterialNo, CreationDate from tblHeaderData Where InventoryNo = '{0}' Order by CreationDate DESC",
                             _filter.InventoryNo);
-                        //T01 ile od ostatniej sztuki
+                        //T01 w tej godzinie
                         var sqlQuery2 = String.Format(
                             "select TOP 1 " +
-                            " count(tblDMC.PSN) over() as 'hours'," +
-                            " DATEDIFF(MINUTE, tblDMC.CreationDate, getdate()) as 'time'" +
+                            " Count (DISTINCT tblDMC.DMC) as 'hours'" +
                             " from tblHeaderData " +
                             " inner join tblDMC on tblHeaderData.PSN = tblDMC.PSN" +
                             " where tblHeaderData.InventoryNo  = '{0}' and " +
-                            " tblDMC.CreationDate >= dateadd(hour, datediff(hour, 0, GETDATE()), 0)" +
-                            " Order by tblHeaderData.CreationDate DESC", _filter.InventoryNo);
+                            " tblDMC.CodeAnalysisText = 'BidiProcess' and" +
+                            " tblDMC.CreationDate >=dateadd(hour,datediff(hour,0,GETDATE()),0) "+
+                            " group by tblHeaderData.ProductionOrder "+
+                            " order by MAX(tblDMC.CreationDate) DESC", _filter.InventoryNo);
 
                         //T01 ile sztuk wyprodukowanych
                         var sqlQuery3 = String.Format("select TOP 1 Count (DISTINCT tblDMC.DMC) as 'pcs'" +

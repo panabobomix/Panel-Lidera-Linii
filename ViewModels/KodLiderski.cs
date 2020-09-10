@@ -29,10 +29,11 @@ namespace Panel_Lidera_Linii.ViewModels
                     {
                         //KOD LIDERSKI
                         con.Open(); //otwarcie połączenie
-                        var sqlQuery = String.Format(
-                            "select count (DMC) as 'kod'" +
-                            "from tblDMC where DMC = '{0}' and CreationDate > DATEADD(hh,-3,GETDATE())" +
-                            "group by tblDMC.DMC", _filter.DMC);
+                        var sqlQuery = String.Format("select tblHeaderData.InventoryNo, tblHeaderData.CreationDate" +
+                                                      "from tblHeaderData " +
+                                                      "inner join tblDMC on tblDMC.PSN = tblHeaderData.PSN" +
+                                                      "where tblDMC.DMC = '{0}' and tblDMC.CreationDate > DATEADD(hh, -72,GETDATE())" +
+                                                      "order by tblHeaderData.CreationDate DESC", _filter.DMC);
                         using (var a = new SqlDataAdapter(sqlQuery, con))
                         {
                             var dt = new DataTable();
@@ -41,7 +42,7 @@ namespace Panel_Lidera_Linii.ViewModels
                             {
                                 if (dt.Rows.Count > 1)
                                 {
-                                    //MessageBox.Show("Znaleziono więcej niż 1 element");
+                                    MessageBox.Show("Znaleziono więcej niż 1 element");
                                     //error
                                 }
 
@@ -49,19 +50,19 @@ namespace Panel_Lidera_Linii.ViewModels
                                 App.Current.Dispatcher.Invoke((Action) delegate
                                 {
                                     dataItems.Clear();
-                                    dataItems.Add(new tblDMCView()
-                                    {
+                                   dataItems.Add(new tblDMCView()
+                                   {
                                         kod = _dataRow["kod"].ToString()
                                     });
                                 });
                             }
                             else
                             {
-                                // MessageBox.Show("Brak elementu");
+                                 MessageBox.Show("Brak elementu");
                             }
                         }
-                    }
-                }
+                   }
+               }
                 catch (Exception ex)
                 {
                     Logger.Fatal(ex);

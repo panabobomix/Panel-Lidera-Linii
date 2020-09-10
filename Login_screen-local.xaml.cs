@@ -23,7 +23,7 @@ namespace Panel_Lidera_Linii
     public partial class login_screen : Window
     {
         //protected readonly Logger Logger = LogManager.GetCurrentClassLogger();
-        //private static string _connectionString = Configuration.ConnectionString;
+        //private static string _connectionString_login = Configuration.ConnectionString_login;
         public login_screen()
         {
             InitializeComponent();
@@ -35,16 +35,16 @@ namespace Panel_Lidera_Linii
         /// <param name="sender"></param>
         /// <param name="e"></param>
         //private static string connectionString_login = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DATADIRECTORY|\\USERS_DATABASE.mdf;Integrated Security=True";
-        private static string connectionString_login = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
-            "AttachDbFilename= V:\\12 Production\\Technicy Operacyjni CV\\APP\\TEST\\Debug\\USERS_DATABASE.mdf;" +
-            "Integrated Security=True";
+        //private static string connectionString_login = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
+         //   "AttachDbFilename= V:\\12 Production\\Technicy Operacyjni CV\\APP\bin\\Debug\\USERS_DATABASE.mdf;" +
+          //  "Integrated Security=True";
 
 
 
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
-            /*// LOKALNA BAZA ZMIENIC NA POŁĄCZNIE NP Z BAZA BW
+          /*
             SqlConnection sqlCon = new SqlConnection(connectionString_login); // localdb lub localhost
             try
             {
@@ -74,7 +74,11 @@ namespace Panel_Lidera_Linii
             finally
             {
                 sqlCon.Close();
-            }*/
+            }
+
+            */
+
+            // LOGOWANIE LOKALNE BEZ BAZY
             if (txtUsername.Text == "")
 
             {
@@ -92,7 +96,7 @@ namespace Panel_Lidera_Linii
                 MessageBox.Show("Aplikacja nie została jeszcze udostępniona :) ");
                 }
            
-        
+            
 
         }
         

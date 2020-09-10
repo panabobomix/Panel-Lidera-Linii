@@ -20,7 +20,7 @@ namespace Panel_Lidera_Linii.Helper
             }
         }
 
-        private static int _refresh = 60;
+        private static int _refresh = 15;
 /// <summary>
 ///  z jaka częstotliwością ma się odświeżać wątek - wartości podane w sekundach
 /// jeśli puste - domyślnie 60 sekund
